@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
+import "./styles/global.css";
 import Index from "./01-index/index";
 import About from "./02-about/index";
 import Work from "./03-work/index";

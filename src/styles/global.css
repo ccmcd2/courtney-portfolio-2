@@ -1,0 +1,415 @@
+/* 
+    Name: Courtney McDonald
+    Project: My portfolio
+    Date: Fall 2022
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=M+PLUS+1:wght@400;700&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    --teal: #45aab4;
+    --blue: #038db2;
+    --navy: #1b5881;
+    --pink: #f5789d;
+    --orange: #f28f64;
+    --yellow: #fbb45c;
+    --white: #ffffff;
+    --black: #202020;
+    scroll-behavior: smooth;
+    font-family: 'M PLUS 1', sans-serif;
+    line-height: 1.25rem;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1rem;
+    color: var(--black);
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+main {
+    padding: 40px 0 0 0;
+}
+
+section {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 40px 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Fredoka One', sans-serif;
+    margin: 0 0 20px 0;
+    color: var(--navy);
+    line-height: 1.25em;
+}
+
+h1 {
+    font-size: 2.222em;
+}
+
+h2 {
+    font-size: 1.778em;
+}
+
+h3  {
+    font-size: 1.444em;
+}
+
+h4  {
+    font-size: 1.333em;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+a:link, a:active, a:visited, a {
+    transition: color 250ms ease;
+    color: var(--orange);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+a:hover {
+    transition: color 250ms ease;
+    color: var(--teal);
+}
+
+/* grid system */
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+[class^='col-'] {
+    width: 100%;
+    max-width: 100%;
+}
+
+.col-xs-1 {
+    flex: 0 0 calc((100% / 12) * 1);
+    max-width: calc((100% / 12) * 1);
+}
+
+.col-xs-2 {
+    flex: 0 0 calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2);
+}
+
+.col-xs-3 {
+    flex: 0 0 calc((100% / 12) * 3);
+    max-width: calc((100% / 12) * 3);
+}
+
+.col-xs-4 {
+    flex: 0 0 calc((100% / 12) * 4);
+    max-width: calc((100% / 12) * 4);
+}
+
+.col-xs-5 {
+    flex: 0 0 calc((100% / 12) * 5);
+    max-width: calc((100% / 12) * 5);
+}
+
+.col-xs-6 {
+    flex: 0 0 calc((100% / 12) * 6);
+    max-width: calc((100% / 12) * 6);
+}
+
+.col-xs-7 {
+    flex: 0 0 calc((100% / 12) * 7);
+    max-width: calc((100% / 12) * 7);
+}
+
+.col-xs-8 {
+    flex: 0 0 calc((100% / 12) * 8);
+    max-width: calc((100% / 12) * 8);
+}
+
+.col-xs-9 {
+    flex: 0 0 calc((100% / 12) * 9);
+    max-width: calc((100% / 12) * 9);
+}
+
+.col-xs-10 {
+    flex: 0 0 calc((100% / 12) * 10);
+    max-width: calc((100% / 12) * 10);
+}
+
+.col-xs-11 {
+    flex: 0 0 calc((100% / 12) * 11);
+    max-width: calc((100% / 12) * 11);
+}
+
+.col-xs-12 {
+    flex: 0 0 calc((100% / 12) * 12);
+    max-width: calc((100% / 12) * 12);
+}
+
+@media screen and (min-width: 576px){
+    .col-sm-1 {
+        flex: 0 0 calc((100% / 12) * 1);
+        max-width: calc((100% / 12) * 1);
+    }
+    
+    .col-sm-2 {
+        flex: 0 0 calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+    
+    .col-sm-3 {
+        flex: 0 0 calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+    
+    .col-sm-4 {
+        flex: 0 0 calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+    
+    .col-sm-5 {
+        flex: 0 0 calc((100% / 12) * 5);
+        max-width: calc((100% / 12) * 5);
+    }
+    
+    .col-sm-6 {
+        flex: 0 0 calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+    
+    .col-sm-7 {
+        flex: 0 0 calc((100% / 12) * 7);
+        max-width: calc((100% / 12) * 7);
+    }
+    
+    .col-sm-8 {
+        flex: 0 0 calc((100% / 12) * 8);
+        max-width: calc((100% / 12) * 8);
+    }
+    
+    .col-sm-9 {
+        flex: 0 0 calc((100% / 12) * 9);
+        max-width: calc((100% / 12) * 9);
+    }
+    
+    .col-sm-10 {
+        flex: 0 0 calc((100% / 12) * 10);
+        max-width: calc((100% / 12) * 10);
+    }
+    
+    .col-sm-11 {
+        flex: 0 0 calc((100% / 12) * 11);
+        max-width: calc((100% / 12) * 11);
+    }
+    
+    .col-sm-12 {
+        flex: 0 0 calc((100% / 12) * 12);
+        max-width: calc((100% / 12) * 12);
+    }
+}
+
+@media screen and (min-width: 768px){
+    .col-md-1 {
+        flex: 0 0 calc((100% / 12) * 1);
+        max-width: calc((100% / 12) * 1);
+    }
+    
+    .col-md-2 {
+        flex: 0 0 calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+    
+    .col-md-3 {
+        flex: 0 0 calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+    
+    .col-md-4 {
+        flex: 0 0 calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+    
+    .col-md-5 {
+        flex: 0 0 calc((100% / 12) * 5);
+        max-width: calc((100% / 12) * 5);
+    }
+    
+    .col-md-6 {
+        flex: 0 0 calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+    
+    .col-md-7 {
+        flex: 0 0 calc((100% / 12) * 7);
+        max-width: calc((100% / 12) * 7);
+    }
+    
+    .col-md-8 {
+        flex: 0 0 calc((100% / 12) * 8);
+        max-width: calc((100% / 12) * 8);
+    }
+    
+    .col-md-9 {
+        flex: 0 0 calc((100% / 12) * 9);
+        max-width: calc((100% / 12) * 9);
+    }
+    
+    .col-md-10 {
+        flex: 0 0 calc((100% / 12) * 10);
+        max-width: calc((100% / 12) * 10);
+    }
+    
+    .col-md-11 {
+        flex: 0 0 calc((100% / 12) * 11);
+        max-width: calc((100% / 12) * 11);
+    }
+    
+    .col-md-12 {
+        flex: 0 0 calc((100% / 12) * 12);
+        max-width: calc((100% / 12) * 12);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .col-lg-1 {
+        flex: 0 0 calc((100% / 12) * 1);
+        max-width: calc((100% / 12) * 1);
+    }
+    
+    .col-lg-2 {
+        flex: 0 0 calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+    
+    .col-lg-3 {
+        flex: 0 0 calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+    
+    .col-lg-4 {
+        flex: 0 0 calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+    
+    .col-lg-5 {
+        flex: 0 0 calc((100% / 12) * 5);
+        max-width: calc((100% / 12) * 5);
+    }
+    
+    .col-lg-6 {
+        flex: 0 0 calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+    
+    .col-lg-7 {
+        flex: 0 0 calc((100% / 12) * 7);
+        max-width: calc((100% / 12) * 7);
+    }
+    
+    .col-lg-8 {
+        flex: 0 0 calc((100% / 12) * 8);
+        max-width: calc((100% / 12) * 8);
+    }
+    
+    .col-lg-9 {
+        flex: 0 0 calc((100% / 12) * 9);
+        max-width: calc((100% / 12) * 9);
+    }
+    
+    .col-lg-10 {
+        flex: 0 0 calc((100% / 12) * 10);
+        max-width: calc((100% / 12) * 10);
+    }
+    
+    .col-lg-11 {
+        flex: 0 0 calc((100% / 12) * 11);
+        max-width: calc((100% / 12) * 11);
+    }
+    
+    .col-lg-12 {
+        flex: 0 0 calc((100% / 12) * 12);
+        max-width: calc((100% / 12) * 12);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .col-xl-1 {
+        flex: 0 0 calc((100% / 12) * 1);
+        max-width: calc((100% / 12) * 1);
+    }
+    
+    .col-xl-2 {
+        flex: 0 0 calc((100% / 12) * 2);
+        max-width: calc((100% / 12) * 2);
+    }
+    
+    .col-xl-3 {
+        flex: 0 0 calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+    
+    .col-xl-4 {
+        flex: 0 0 calc((100% / 12) * 4);
+        max-width: calc((100% / 12) * 4);
+    }
+    
+    .col-xl-5 {
+        flex: 0 0 calc((100% / 12) * 5);
+        max-width: calc((100% / 12) * 5);
+    }
+    
+    .col-xl-6 {
+        flex: 0 0 calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+    }
+    
+    .col-xl-7 {
+        flex: 0 0 calc((100% / 12) * 7);
+        max-width: calc((100% / 12) * 7);
+    }
+    
+    .col-xl-8 {
+        flex: 0 0 calc((100% / 12) * 8);
+        max-width: calc((100% / 12) * 8);
+    }
+    
+    .col-xl-9 {
+        flex: 0 0 calc((100% / 12) * 9);
+        max-width: calc((100% / 12) * 9);
+    }
+    
+    .col-xl-10 {
+        flex: 0 0 calc((100% / 12) * 10);
+        max-width: calc((100% / 12) * 10);
+    }
+    
+    .col-xl-11 {
+        flex: 0 0 calc((100% / 12) * 11);
+        max-width: calc((100% / 12) * 11);
+    }
+    
+    .col-xl-12 {
+        flex: 0 0 calc((100% / 12) * 12);
+        max-width: calc((100% / 12) * 12);
+    }
+}
+/* end of grid system */
