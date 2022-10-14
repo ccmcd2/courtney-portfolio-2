@@ -4,11 +4,18 @@ import * as palette from "../Variables";
 
 const Nav = styled.nav`
     width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+
+    @media (min-width: 1198px) {
+        padding: 0;
+    }
 `;
 
 const Logo = styled.div`

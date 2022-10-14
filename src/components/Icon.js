@@ -15,9 +15,10 @@ const IconContainer = styled.div`
     background-color: ${({color}) => color};
 
     img {
-        width: 80%;
-        height: 80%;
-        border-radius: 50%;
+        width: 60%;
+        height: auto;
+        max-height: 60%;
+        object-fit: contain;
     }
 
     p {
@@ -28,9 +29,9 @@ const IconContainer = styled.div`
     }
 `;
 
-const Icon = ({children, color}) => {
+const Icon = ({children, color, className}) => {
     return (
-        <IconContainer color={color}>
+        <IconContainer color={color} className={className}>
             {children}
         </IconContainer>
     )
