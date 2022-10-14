@@ -8,18 +8,18 @@ export const yellow = '#fbb45c';
 export const white = '#ffffff';
 export const black = '#202020';
 
-export const color1 = {yellow};
-export const color2 = {orange};
-export const color3 = {pink};
-export const color4 = {teal};
-export const color5 = {blue};
+export const color1 = yellow;
+export const color2 = orange;
+export const color3 = pink;
+export const color4 = teal;
+export const color5 = blue;
 
 // fonts
 export const headerFont = "'Fredoka One', sans-serif";
 export const mainFont = "'M PLUS 1', sans-serif";
 
 // sizes
-export const standardPadding = '20px';
+export const standardPadding = '24px';
 export const standardMargin = '20px';
 export const standardBorderRadius = '10px';
 

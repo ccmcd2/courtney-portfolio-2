@@ -2,24 +2,37 @@ import React from "react";
 import styled from "styled-components";
 import * as palette from "../Variables";
 
-const IconCircle = styled.div`
+const IconContainer = styled.div`
     width: 49px;
     height: 49px;
     border-radius: 50%;
-    background-color: ${props => props.color1 ? "pink" : "orange"};
-    background-color: ${props => props.color2 ? "green" : "blue"};
     filter: ${palette.standardDropShadow};
     margin-bottom: 5px;
-    color: ${palette.white};
-    font-family: ${palette.headerFont};
-    font-size: 23px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: ${({color}) => color};
+
+    img {
+        width: 80%;
+        height: 80%;
+        border-radius: 50%;
+    }
+
+    p {
+        color: ${palette.white};
+        font-family: ${palette.headerFont};
+        font-size: 23px;
+        margin: 0;
+    }
 `;
 
-const Icon = ({image}) => {
+const Icon = ({children, color}) => {
     return (
-        <IconCircle>
-            <img src={image}></img>
-        </IconCircle>
+        <IconContainer color={color}>
+            {children}
+        </IconContainer>
     )
 }
 
