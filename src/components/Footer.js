@@ -11,7 +11,7 @@ import {keyframes} from "styled-components";
 const rotateAnimation = keyframes`
 0% {transform: rotate(0deg); width: 49px; height: 49px; margin: 0;}
 50% {width: 54px; height: 54px; margin: -2.5px 0 0 -2.5px;}
-100% {transform: rotate(360deg); width: 49px; height: 49px; margin: 0;}
+100% {transform: rotate(-360deg); width: 49px; height: 49px; margin: 0;}
 `;
 
 const Prefooter = styled.div`
@@ -62,7 +62,7 @@ const FooterMain = styled.div`
         }
 
         div div.links {
-            height: 5em;
+            height: 7em;
             display: flex;
             flex-flow: column nowrap;
             justify-content: space-between;
@@ -114,9 +114,10 @@ const Footer = () => {
                     <div className="col-xs-12 col-md-4">
                         <h3>Quick links</h3>
                         <div className="links">
-                            <a href="/about">About</a>
-                            <a href="/work">My work</a>
-                            <a href="/contact">Contact</a>
+                            <a href="/" alt="Home">Home</a>
+                            <a href="/about" alt="About">About</a>
+                            <a href="/work" alt="My Work">My Work</a>
+                            <a href="/contact" alt="Contact">Contact</a>
                         </div>
                     </div>
                     <div className="col-xs-12 col-md-4">
