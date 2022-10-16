@@ -243,7 +243,7 @@ const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
-    const whiteNav = ["work/davids-barbeque", "work/c-and-w-antiques", "work/city-of-grand-prairie", "work/courtney-and-cale", "work/portfolio-1", "work/portfolio-2", "work/realeather", "work/tarrant-county-public-health"]
+    const whiteNav = ["/work/davids-barbeque", "/work/c-and-w-antiques", "/work/city-of-grand-prairie-intranet", "/work/city-of-grand-prairie-public", "/work/courtney-and-cale", "/work/portfolio-1", "/work/portfolio-2", "/work/realeather", "/work/tarrant-county-public-health"]
 
     return (
         <header>

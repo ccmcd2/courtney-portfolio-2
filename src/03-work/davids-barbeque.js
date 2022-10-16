@@ -5,16 +5,17 @@ import Test from "../img/royal-connor.jpg";
 import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
+import HeroImage from "../img/davids-barbeque-hero.jpg";
 
 const DavidsBarbeque = () => {
     return (
         <div>
-            <Hero image={Test}></Hero>
+            <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
                 <h1>David's Barbeque Redesign</h1>
-                <StyledLink>View live product</StyledLink>
+                <StyledLink href="https://ctec4309.ccm9483.uta.cloud/term-project/" alt="View live product" target="_blank">View live product</StyledLink>
             </section>
             <section>
                 <h2>User Flows</h2>

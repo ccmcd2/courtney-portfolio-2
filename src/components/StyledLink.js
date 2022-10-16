@@ -24,6 +24,11 @@ const StyledLink = styled.a`
   max-height: 49px;
   display: inline-block;
 
+  &:active, &:visited, &:link {
+    color: ${palette.white};
+    text-decoration: none;
+  }
+
   &:hover {
     transition: background-color 250ms ease;
     background-color: ${palette.yellow};

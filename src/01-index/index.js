@@ -13,6 +13,15 @@ import Paintbrush from "../img/paintbrush-icon.svg";
 import Wrench from "../img/wrench-icon.svg";
 import Checkmark from "../img/checkmark-icon.svg";
 import Button2 from "../components/Button";
+import IntranetWireframeMobile from "../img/intranet-wireframe-mobile.png";
+import GPPublicWireframeMobile from "../img/gp-public-wireframe-mobile.png";
+import CourtneyAndCaleWireframeMobile from "../img/courtney-and-cale-wireframe-mobile.png";
+import DavidsBarbequeWireframeMobile from "../img/davids-barbeque-wireframe-mobile.png";
+import Portfolio1WireframeMobile from "../img/portfolio-1-wireframe-mobile.png";
+import RealeatherWireframeMobile from "../img/realeather-wireframe-mobile.png";
+import TCPHWireframeMobile from "../img/tcph-wireframe-mobile.png";
+import CAndWAntiquesWireframeMobile from "../img/c-and-w-antiques-wireframe-mobile.png";
+import DiagonalCarousel from "../components/DiagonalCarousel";
 
 const Index = () => {
     return (
@@ -20,15 +29,18 @@ const Index = () => {
             <section></section>
             <section>
                 <h1>Headline goes here</h1>
-                <p>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience creating and implementing innovative solutions for David’s Barbeque.</p>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
-                <Phone image={Test}></Phone>
+                <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience creating and implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
+                <DiagonalCarousel>
+                    <Phone image={IntranetWireframeMobile}></Phone>
+                    <Phone image={GPPublicWireframeMobile}></Phone>
+                    <Phone image={CourtneyAndCaleWireframeMobile}></Phone>
+                    <Phone image={DavidsBarbequeWireframeMobile}></Phone>
+                    <Phone image={Portfolio1WireframeMobile}></Phone>
+                    <Phone image={RealeatherWireframeMobile}></Phone>
+                    <Phone image={TCPHWireframeMobile}></Phone>
+                    <Phone image={CAndWAntiquesWireframeMobile}></Phone>
+                    <Phone image={Test}></Phone>
+                </DiagonalCarousel>
             </section>
             <section>
                 <h1>How I can help</h1>

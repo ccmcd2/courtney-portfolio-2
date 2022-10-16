@@ -5,11 +5,12 @@ import Test from "../img/royal-connor.jpg";
 import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
+import HeroImage from "../img/tcph-hero.jpg";
 
 const TCPH = () => {
     return (
         <div>
-            <Hero image={Test}></Hero>
+            <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
