@@ -21,6 +21,14 @@ const Index = () => {
             <section>
                 <h1>Headline goes here</h1>
                 <p>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience creating and implementing innovative solutions for David’s Barbeque.</p>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
+                <Phone image={Test}></Phone>
             </section>
             <section>
                 <h1>How I can help</h1>

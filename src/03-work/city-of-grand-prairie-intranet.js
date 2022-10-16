@@ -6,7 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 
-const GrandPrairie = () => {
+const GrandPrairieIntranet = () => {
     return (
         <div>
             <Hero image={Test}></Hero>
@@ -57,4 +57,4 @@ const GrandPrairie = () => {
     )
 }
 
-export default GrandPrairie;
+export default GrandPrairieIntranet;

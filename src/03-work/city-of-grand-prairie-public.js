@@ -6,14 +6,14 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 
-const CAndWAntiques = () => {
+const GrandPrairiePublic = () => {
     return (
         <div>
             <Hero image={Test}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>C &amp; W Antiques</h1>
+                <h1>David's Barbeque Redesign</h1>
                 <StyledLink>View live product</StyledLink>
             </section>
             <section>
@@ -57,4 +57,4 @@ const CAndWAntiques = () => {
     )
 }
 
-export default CAndWAntiques;
+export default GrandPrairiePublic;

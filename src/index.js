@@ -12,12 +12,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DavidsBarbeque from './03-work/davids-barbeque';
 import CAndWAntiques from './03-work/c-and-w-antiques';
-import GrandPrairie from "./03-work/city-of-grand-prairie";
+import GrandPrairiePublic from "./03-work/city-of-grand-prairie-public";
 import CourtneyAndCale from './03-work/courtney-and-cale';
 import Portfolio1 from './03-work/portfolio-1';
 import Portfolio2 from './03-work/portfolio-2';
 import Realeather from './03-work/realeather';
 import TCPH from './03-work/tarrant-county-public-health';
+import GrandPrairieIntranet from './03-work/city-of-grand-prairie-intranet';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -44,12 +45,13 @@ root.render(
         <Route path="contact" element={<Contact/>}/>
         <Route path="work/davids-barbeque" element={<DavidsBarbeque/>}/>
         <Route path="work/c-and-w-antiques" element={<CAndWAntiques/>}/>
-        <Route path="work/city-of-grand-prairie" element={<GrandPrairie/>}/>
+        <Route path="work/city-of-grand-prairie-public" element={<GrandPrairiePublic/>}/>
         <Route path="work/courtney-and-cale" element={<CourtneyAndCale/>}/>
         <Route path="work/portfolio-1" element={<Portfolio1/>}/>
         <Route path="work/portfolio-2" element={<Portfolio2/>}/>
         <Route path="work/realeather" element={<Realeather/>}/>
         <Route path="work/tarrant-county-public-health" element={<TCPH/>}/>
+        <Route path="work/city-of-grand-prairie-intranet" element={<GrandPrairieIntranet/>}/>
         <Route path="*" element="no page"/>
       </Routes>
       <Footer/>
