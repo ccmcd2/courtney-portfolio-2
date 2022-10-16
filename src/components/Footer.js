@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import * as palette from "../Variables";
-import Button from "./Button";
+import StyledLink from "./StyledLink";
 import Icon from "./Icon";
 import LinkedIn from "../img/linkedin-logo.svg";
 import Github from "../img/github-logo.svg";
@@ -106,7 +106,7 @@ const Footer = () => {
             <Prefooter>
                 <div className="content">
                     <p>Get all of the nitty gritty details in a printer-friendly fashion.</p>
-                    <Button>Download resume</Button>
+                    <StyledLink>Download resume</StyledLink>
                 </div>
             </Prefooter>
             <FooterMain>

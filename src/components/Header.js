@@ -43,6 +43,16 @@ const Nav = styled.nav`
     padding: 0 ${palette.standardPadding};
     z-index: 1;
 
+    &.white {
+        ul li a {
+            color: ${palette.white};
+        }
+
+        .bars-container div {
+            background-color: ${palette.white};
+        }
+    }
+
     a {
         text-decoration: none;
     }
@@ -201,6 +211,17 @@ const Logo = styled.div`
     visibility: visible;
     transition: background-color 250ms ease;
 
+    &.white {
+        background-color: ${palette.white};
+        color ${palette.pink};
+        transition: color 250ms ease;
+
+        &:hover {
+            color: ${palette.white};
+            transition: color 250ms ease;
+        }
+    }
+
     &:hover {
         cursor: pointer;
         background-color: ${palette.yellow};
@@ -222,12 +243,12 @@ const Header = () => {
 
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
-    const whiteNav = ["/case-study"]
+    const whiteNav = ["work/davids-barbeque", "work/c-and-w-antiques", "work/city-of-grand-prairie", "work/courtney-and-cale", "work/portfolio-1", "work/portfolio-2", "work/realeather", "work/tarrant-county-public-health"]
 
     return (
         <header>
             <Nav className={whiteNav.includes(location.pathname) ? "white" : ""}>
-                <a href="/" alt="Home"><Logo><p>C</p></Logo></a>
+                <a href="/" alt="Home"><Logo className={whiteNav.includes(location.pathname) ? "white" : ""}><p>C</p></Logo></a>
                 <div className="bars-container" onClick={() => setMenuOpen(true)}>
                     <div></div>
                     <div></div>

@@ -24,6 +24,7 @@ html {
     font-family: 'M PLUS 1', sans-serif;
     line-height: 1.25rem;
     overflow-x: hidden;
+    background-color: var(--navy);
 }
 
 body {
@@ -44,6 +45,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     padding: 0 24px 40px 24px;
+    width: 100%;
 }
 
 @media only screen and (min-width: 1198px) {
@@ -82,7 +84,31 @@ h4  {
 }
 
 p {
-    margin: 0 0 1em 0;
+    margin: 0 0 10px 0;
+}
+
+p span {
+    font-weight: 700;
+}
+
+p span.color1 {
+    color: var(--yellow);
+}
+
+p span.color2 {
+    color: var(--orange);
+}
+
+p span.color3 {
+    color: var(--pink);
+}
+
+p span.color4 {
+    color: var(--teal);
+}
+
+p span.color5 {
+    color: var(--blue);
 }
 
 a:link, a:active, a:visited, a {

@@ -12,27 +12,36 @@ const wiggleAnimation = keyframes`
 100% {transform: rotate(0deg);}
 `;
 
-const Button = styled.a`
-  padding: 13px 25px;
-  border-radius: 100px;
-  background-color: ${palette.pink};
-  color: ${palette.white};
-  font-weight: 700;
-  transition: background-color 250ms ease;
-  filter: ${palette.standardDropShadow};
-  text-decoration: none;
-  max-height: 49px;
-  display: inline-block;
-  margin-bottom: 5px;
+const StyledButton = styled.button`
+    padding: 13px 25px;
+    border-radius: 100px;
+    border: 0;
+    background-color: ${palette.pink};
+    color: ${palette.white};
+    font-weight: 700;
+    transition: background-color 250ms ease;
+    filter: ${palette.standardDropShadow};
+    text-decoration: none;
+    max-height: 49px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
 
-  &:hover {
+    &:hover {
     background-color: ${palette.yellow};
     transition: background-color 250ms ease;
     cursor: pointer;
     color: ${palette.white};
     animation-name: ${wiggleAnimation};
     animation-duration: 700ms;
-  }
+    }
 `;
 
-export default Button;
+const Button2 = ({type, text}) => {
+    return (
+        <StyledButton type={type}>{text}</StyledButton>
+    )
+}
+
+export default Button2;
