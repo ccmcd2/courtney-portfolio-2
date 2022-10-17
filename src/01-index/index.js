@@ -4,7 +4,6 @@ import Icon from "../components/Icon";
 import Test from "../img/royal-connor.jpg";
 import Accordion from "../components/Accordion";
 import * as palette from "../Variables";
-import {FormField, TextArea} from "../components/FormField";
 import Phone from "../components/Phone";
 import Step from "../components/Step";
 import Glasses from "../img/glasses-icon.svg";
@@ -22,6 +21,7 @@ import RealeatherWireframeMobile from "../img/realeather-wireframe-mobile.png";
 import TCPHWireframeMobile from "../img/tcph-wireframe-mobile.png";
 import CAndWAntiquesWireframeMobile from "../img/c-and-w-antiques-wireframe-mobile.png";
 import DiagonalCarousel from "../components/DiagonalCarousel";
+import ContactForm from "../components/ContactForm";
 
 const Index = () => {
     return (
@@ -30,11 +30,14 @@ const Index = () => {
                 <h1>Creating websites users love</h1>
                 <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
                 <DiagonalCarousel>
+                    <a href="/work/realeather" alt="Realeather website redesign">
+                        <Phone image={RealeatherWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">
+                        <Phone image={TCPHWireframeMobile}></Phone>
+                    </a>
                     <a href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign">
                         <Phone image={IntranetWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">
-                        <Phone image={GPPublicWireframeMobile}></Phone>
                     </a>
                     <a href="/work/courtney-and-cale" alt="Courtney + Cale website design">
                         <Phone image={CourtneyAndCaleWireframeMobile}></Phone>
@@ -45,14 +48,11 @@ const Index = () => {
                     <a href="/work/portfolio-1" alt="My first portfolio website design">
                         <Phone image={Portfolio1WireframeMobile}></Phone>
                     </a>
-                    <a href="/work/realeather" alt="Realeather website redesign">
-                        <Phone image={RealeatherWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">
-                        <Phone image={TCPHWireframeMobile}></Phone>
-                    </a>
                     <a href="/c-and-w-antiques" alt="C &amp; W Antiques website redesign">
                         <Phone image={CAndWAntiquesWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">
+                        <Phone image={GPPublicWireframeMobile}></Phone>
                     </a>
                     <a href="/work/portfolio-2" alt="My second portfolio website design">
                         <Phone image={Test}></Phone>
@@ -113,13 +113,7 @@ const Index = () => {
             <section>
                 <h1>Let's chit-chat!</h1>
                 <p>I’m always eager to start another project, solve another problem, or make another friend. Let me know how I can help!</p>
-                <form>
-                    <FormField For="name" id="name" name="name" label="Your name" type="text" placeholder="Your name" color={palette.color1}></FormField>
-                    <FormField For="email" id="email" name="email" label="Email address" type="text" placeholder="Email address" color={palette.color2}></FormField>
-                    <FormField For="phone" id="phone" name="phone" label="Phone number" type="text" placeholder="Phone number" color={palette.color3}></FormField>
-                    <TextArea For="message" label="Message" id="message" name="message" rows="5" placeholder="Message" color={palette.color4}></TextArea>
-                    <Button2 type="submit" text="Send"></Button2>
-                </form>
+                <ContactForm></ContactForm>
             </section>
         </main>
     )

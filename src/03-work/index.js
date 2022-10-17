@@ -17,7 +17,7 @@ const Work = () => {
         <main>
             <section>
                 <h1>Headline goes here</h1>
-                <p>Intro paragraph goes here. Fusce congue, diam eu elementum luctus, mi magna mollis purus, et malesuada purus arcu eget quam. Quisque iaculis vitae augue ut euismod.</p>
+                <p></p>
             </section>
             <section>
                 <Project image={DavidsBarbequeHome} alt="home page of David's Barbeque website" title="David's Barbeque website redesign" color={palette.color1} className="left">

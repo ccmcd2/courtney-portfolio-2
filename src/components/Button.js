@@ -26,7 +26,14 @@ const StyledButton = styled.button`
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
     font-size: 1rem;
+
+    &:focus {
+        outline: 3px solid ${palette.white};
+        background-color: ${palette.yellow};
+        animation: ${wiggleAnimation} 700ms;
+    }
 
     &:hover {
     background-color: ${palette.yellow};

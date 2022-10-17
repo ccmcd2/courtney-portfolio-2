@@ -23,11 +23,18 @@ const StyledLink = styled.a`
   text-decoration: none;
   max-height: 49px;
   display: inline-block;
+  margin-bottom: 5px;
 
   &:active, &:visited, &:link {
     color: ${palette.white};
     text-decoration: none;
   }
+
+  &:focus {
+    outline: 3px solid ${palette.white};
+    background-color: ${palette.yellow};
+    animation: ${wiggleAnimation} 700ms;
+}
 
   &:hover {
     transition: background-color 250ms ease;
@@ -51,6 +58,13 @@ const StyledLink = styled.a`
       color: ${palette.white};
       transition: all 250ms ease;
     }
+
+    &:focus {
+      outline: 3px solid ${palette.white};
+      background-color: ${palette.blue};
+      color: ${palette.white};
+      animation: ${wiggleAnimation} 700ms;
+  }
   }
 `;
 
