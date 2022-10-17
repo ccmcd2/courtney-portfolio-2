@@ -11,9 +11,12 @@ const PhoneImage = styled.img`
     border: 8px solid ${palette.black};
     border-radius: 25px;
     margin: 0 ${palette.standardMargin};
+    transition: border 250ms ease;
 
     &:hover {
         cursor: pointer;
+        filter: brightness(70%);
+        transition: border 250ms ease;
     }
 
     @media (min-width: 768px) {

@@ -36,6 +36,22 @@ const StyledLink = styled.a`
     color: ${palette.white};
     animation: ${wiggleAnimation} 700ms;
   }
+
+  &.secondary {
+    background-color: ${palette.white};
+    color: ${palette.blue};
+
+    &:active, &:visited, &:link {
+      color: ${palette.blue};
+      transition: all 250ms ease;
+    }
+
+    &:hover {
+      background-color: ${palette.blue};
+      color: ${palette.white};
+      transition: all 250ms ease;
+    }
+  }
 `;
 
 export default StyledLink;

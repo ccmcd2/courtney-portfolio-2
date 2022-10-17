@@ -25,21 +25,38 @@ import DiagonalCarousel from "../components/DiagonalCarousel";
 
 const Index = () => {
     return (
-        <div>
-            <section></section>
+        <main>
             <section>
-                <h1>Headline goes here</h1>
-                <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience creating and implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
+                <h1>Creating websites users love</h1>
+                <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
                 <DiagonalCarousel>
-                    <Phone image={IntranetWireframeMobile}></Phone>
-                    <Phone image={GPPublicWireframeMobile}></Phone>
-                    <Phone image={CourtneyAndCaleWireframeMobile}></Phone>
-                    <Phone image={DavidsBarbequeWireframeMobile}></Phone>
-                    <Phone image={Portfolio1WireframeMobile}></Phone>
-                    <Phone image={RealeatherWireframeMobile}></Phone>
-                    <Phone image={TCPHWireframeMobile}></Phone>
-                    <Phone image={CAndWAntiquesWireframeMobile}></Phone>
-                    <Phone image={Test}></Phone>
+                    <a href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign">
+                        <Phone image={IntranetWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">
+                        <Phone image={GPPublicWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/courtney-and-cale" alt="Courtney + Cale website design">
+                        <Phone image={CourtneyAndCaleWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/davids-barbeque" alt="David's Barbeque website redesign">
+                        <Phone image={DavidsBarbequeWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/portfolio-1" alt="My first portfolio website design">
+                        <Phone image={Portfolio1WireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/realeather" alt="Realeather website redesign">
+                        <Phone image={RealeatherWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">
+                        <Phone image={TCPHWireframeMobile}></Phone>
+                    </a>
+                    <a href="/c-and-w-antiques" alt="C &amp; W Antiques website redesign">
+                        <Phone image={CAndWAntiquesWireframeMobile}></Phone>
+                    </a>
+                    <a href="/work/portfolio-2" alt="My second portfolio website design">
+                        <Phone image={Test}></Phone>
+                    </a>
                 </DiagonalCarousel>
             </section>
             <section>
@@ -85,7 +102,7 @@ const Index = () => {
                     </div>
                     <div className="col-xs-12 col-md-6">
                         <h4>Digital Marketing Intern</h4>
-                        <p><span className="color3">Chilren's Lighthouse &#x2022; May - Dec 2021</span></p>
+                        <p><span className="color3">Children's Lighthouse &#x2022; May - Dec 2021</span></p>
                         <p>Created effective web and social media content for 60+ franchisees.</p>
                         <h4>Graphic Designer</h4>
                         <p><span className="color4">American Advertising Federation &#x2022; Aug - Dec 2021</span></p>
@@ -104,7 +121,7 @@ const Index = () => {
                     <Button2 type="submit" text="Send"></Button2>
                 </form>
             </section>
-        </div>
+        </main>
     )
 }
 

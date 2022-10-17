@@ -21,9 +21,9 @@ const logoCAnimation = keyframes`
 `;
 
 const logoAnimation = keyframes`
-    0% {width: 49px; margin-left: 0; transform: rotate(0deg);}
-    50% {width: 54px; margin-left: -2.5px;}
-    100% {width: 49px; margin-left: 0; transform: rotate(-360deg);}
+    0% {background-color: ${palette.pink};}
+    50% {background-color: ${palette.yellow};}
+    100% {background-color: ${palette.pink};}
 `;
 
 const Nav = styled.nav`
@@ -46,6 +46,11 @@ const Nav = styled.nav`
     &.white {
         ul li a {
             color: ${palette.white};
+            border-bottom: 3px solid ${palette.pink};
+
+            &:hover {
+                border-bottom: 3px solid ${palette.orange};
+            }
         }
 
         .bars-container div {
@@ -209,7 +214,6 @@ const Logo = styled.div`
     justify-content: center;
     align-items: center;
     visibility: visible;
-    transition: background-color 250ms ease;
 
     &.white {
         background-color: ${palette.white};
@@ -223,9 +227,8 @@ const Logo = styled.div`
     }
 
     &:hover {
-        cursor: pointer;
-        background-color: ${palette.yellow};
-        transition: background-color 250ms ease;
+        animation-name: ${logoAnimation};
+        animation-duration: 600ms;
 
         p {
             animation-name: ${logoCAnimation};
