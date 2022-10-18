@@ -4,55 +4,47 @@ import * as palette from "../Variables";
 import Icon from "./Icon";
 
 const StepContainer = styled.div`
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-`;
-
-const IconWithLine = styled.div`
-    height: 100%;
-    margin-right: ${palette.standardMargin};
-    width: 69px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
-    div.line {
-        width: 3px;
-        height: 75px;
-        background-color: ${palette.navy};
-    }
+    width: calc(100% - 24px);
+    border-left: 4px solid ${palette.navy};
+    margin-bottom: 20px;
+    margin-left: 23px;
 
     div.dot {
         width: 12px;
         height: 12px;
         border-radius: 50%;
         background-color: ${palette.navy};
+        position: absolute;
+        bottom: 0;
+        left: -8px;
+    }
+
+    div.icon {
+        position: absolute;
+        top: 0;
+        left: calc((-49px / 2) - 2px)
+    }
+
+    div.description {
+        margin-left: 40px;
+        padding: 10px 0;
+
+        p {
+            margin: 0;
+        }
     }
 `;
 
-const StepDescription = styled.div`
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: ${palette.standardMargin} 0;
-`;
-
 const Step = ({title, description, color, children}) => {
+
     return (
         <StepContainer>
-            <IconWithLine>
-                <Icon color={color}>{children}</Icon>
-                <div className="line"></div>
-                <div className="dot"></div>
-            </IconWithLine>
-            <StepDescription>
+            <Icon className="icon" color={color}>{children}</Icon>
+            <div className="dot"></div>
+            <div className="description">
                 <h2>{title}</h2>
                 <p>{description}</p>
-            </StepDescription>
+            </div>
         </StepContainer>
     )
 }

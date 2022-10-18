@@ -1,82 +1,70 @@
 import React, {useState, useEffect, useRef} from "react";
 import styled from "styled-components";
 import * as palette from "../Variables";
+import Measure from 'react-measure';
 import Carrot from "../img/carrot-icon.svg";
-import Measure from "react-measure";
 
-const AccordionPanel = styled.div`
+const AccordionContainer = styled.div`
     width: 100%;
-    border-radius: ${palette.standardBorderRadius};
-    padding: ${palette.standardPadding};
-    font-weight: 700;
-    background-color: ${({color}) => color};
-    color: ${palette.white};
-    filter: ${palette.standardDropShadow};
-    z-index: 1;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    margin-bottom: 20px;
 
-    &:hover {
-        cursor: pointer;
+    .panel {
+        background-color: ${({color}) => color};
+        position: relative;
+        padding: ${palette.standardPadding};
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: ${palette.standardBorderRadius};
+        font-weight: 700;
+        color: ${palette.white};
+        filter: ${palette.standardDropShadow};
+        z-index: 1;
+        margin-bottom: -5px;
+        transition: font-size 250ms ease;
 
-        p {
+        &:hover {
+            cursor: pointer;
             font-size: 1.15em;
             transition: font-size 250ms ease;
         }
+
+        img {
+            width: 30px;
+            height: auto;
+        }
     }
 
-    p {
-        margin: 0;
-        width: calc(100% - (1em + ${palette.standardMargin}));
-        transition: font-size 250ms ease;
-    }
+    .dropdown {
+        width: 100%;
+        border-radius: ${palette.standardBorderRadius};
+        padding: calc(10px + ${palette.standardPadding}) ${palette.standardPadding} ${palette.standardPadding} ${palette.standardPadding};
+        background-color: ${palette.white};
+        border: 3px solid ${palette.navy};
+        margin-top: -10px;
 
-    img.down {
-        width: 1em;
-        height: auto;
-        margin-left: ${palette.standardMargin};
-    }
-
-    img.up {
-        width: 1em;
-        height: auto;
-        margin-left: ${palette.standardMargin};
-        transform: rotate(180deg);
-    }
-`;
-
-const AccordionDropdown = styled.div`
-    width: 100%;
-    border-radius: ${palette.standardBorderRadius};
-    padding: calc(10px + ${palette.standardPadding}) ${palette.standardPadding} ${palette.standardPadding} ${palette.standardPadding};
-    background-color: ${palette.white};
-    border: 3px solid ${palette.navy};
-    margin-bottom: 20px;
-    margin-top: -10px;
-
-    p {
-        margin: 0;
+        p {
+            margin: 0;
+        }
     }
 `;
 
-const Accordion = ({panelText, color, dropdownText}) => {
-
+const Accordion = ({ panelText, children, color }) => {
     const [open, setOpen] = useState(false);
     const [answerHeight, setAnswerHeight] = useState(0);
 
     return (
-        <div>
-            <AccordionPanel onClick={() => setOpen(!open)} color={color}>
-                <p>{panelText}</p>
-                <img className={open ? "up" : "down"} src={Carrot}></img>
-            </AccordionPanel>
-            <AccordionDropdown>
-                <p>{dropdownText}</p>
-            </AccordionDropdown>
-        </div>
-    )
+        <AccordionContainer color={color}>
+            <div onClick={() => setOpen(!open)} className="panel">{panelText}<span><img src={Carrot}></img></span></div>
+            <div style={{ height: open ? answerHeight : 0, overflowY: 'hidden', transition: 'all 250ms ease' }}>
+                <Measure scroll onResize={(content) => {
+                    setAnswerHeight(content.scroll.height);
+                }}>{({ measureRef }) => (
+                    <div className="dropdown" ref={measureRef}>{children}</div>
+                )}</Measure>
+            </div>
+        </AccordionContainer>
+    );
 }
 
 export default Accordion;

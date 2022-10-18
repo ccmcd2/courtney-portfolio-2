@@ -60,12 +60,20 @@ const Index = () => {
                 </DiagonalCarousel>
             </section>
             <section>
-                <h1>How I can help</h1>
-                <h2>My core skills:</h2>
-                <Accordion color={palette.color1} panelText="Skill 1" dropdownText="Description of skill goes here."></Accordion>
-                <Accordion color={palette.color2} panelText="Skill 2" dropdownText="Description of skill goes here."></Accordion>
-                <Accordion color={palette.color3} panelText="Skill 3" dropdownText="Description of skill goes here."></Accordion>
-                <Accordion color={palette.color4} panelText="Skill 4" dropdownText="Description of skill goes here."></Accordion>
+                <h1>What I bring to the table</h1>
+                <h2>My strengths:</h2>
+                <Accordion color={palette.color1} panelText="Prototyping">
+                    <p>I create functional, high-fidelity wireframes and prototypes so that my designs are ideated, laid out, and approved before I touch my code editor. This ensures that I am able to write efficient code and produce a product with a strong, unified brand.</p>
+                </Accordion>
+                <Accordion color={palette.color2} panelText="Responsive, mobile-first design">
+                    <p>In 2022, there is no reason why people should have to turn their phones sideways to properly view a website. I design and develop with the mobile user in mind&mdash;they shouldn't have to wait, endlessly scroll, hunt, pinch, or squint to understand or enjoy my products.</p>
+                </Accordion>
+                <Accordion color={palette.color3} panelText="Problem solving">
+                    <p>Like most problems, issues that I face when coding often require some extra imaginiation (and some good old-fashioned trial and error) to fix. Luckily, I enjoy challenges. I don't let myself design based on what I do or don't know how to code, so when it comes time to develop, I often get to learn something new.</p>
+                </Accordion>
+                <Accordion color={palette.color4} panelText="Attention to detail">
+                    <p>Description of skill goes here.</p>
+                </Accordion>
                 <h2>My favorite tools:</h2>
                 <p>I use lots of programs and technologies to see my projects through from start to finish. For design, I love to use Figma, Axure RP, Adobe XD, Adobe Illustrator, and Adobe Photoshop. For development, I use HTML, CSS/Sass, Javascript, and React.</p>
                 <h2>Inspect my work</h2>
