@@ -6,6 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/courtney-and-cale-hero.jpg";
+import * as description from "../03-work/ProjectDescriptions";
 
 const CourtneyAndCale = () => {
     return (
@@ -14,7 +15,8 @@ const CourtneyAndCale = () => {
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>David's Barbeque Redesign</h1>
+                <h1>{description.CourtneyAndCaleTitle}</h1>
+                <p>{description.CourtneyAndCaleDescription}</p>
                 <StyledLink>View live product</StyledLink>
             </section>
             <section>

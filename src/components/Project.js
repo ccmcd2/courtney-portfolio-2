@@ -30,6 +30,7 @@ const ProjectContainer = styled.div`
 
         h2 {
             color: ${palette.white};
+            margin-top: 0;
         }
 
         p {

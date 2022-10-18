@@ -6,6 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/c-and-w-antiques-hero2.jpg";
+import * as description from "../03-work/ProjectDescriptions";
 
 const CAndWAntiques = () => {
     return (
@@ -14,7 +15,8 @@ const CAndWAntiques = () => {
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>C &amp; W Antiques</h1>
+                <h1>{description.CAndWAntiquesTitle}</h1>
+                <p>{description.CAndWAntiquesDescription}</p>
                 <StyledLink>View live product</StyledLink>
             </section>
             <section>

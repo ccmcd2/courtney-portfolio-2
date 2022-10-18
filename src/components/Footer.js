@@ -55,6 +55,10 @@ const FooterMain = styled.div`
 
         div.col-xs-12 {
             margin-bottom: ${palette.standardPadding};
+
+            h3 {
+                margin-top: 0;
+            }
         }
 
         div h3, div p, div div a {

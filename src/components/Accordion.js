@@ -6,7 +6,7 @@ import Carrot from "../img/carrot-icon.svg";
 
 const AccordionContainer = styled.div`
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 
     .panel {
         background-color: ${({color}) => color};

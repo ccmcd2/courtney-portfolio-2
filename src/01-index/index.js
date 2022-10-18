@@ -22,6 +22,7 @@ import TCPHWireframeMobile from "../img/tcph-wireframe-mobile.png";
 import CAndWAntiquesWireframeMobile from "../img/c-and-w-antiques-wireframe-mobile.png";
 import DiagonalCarousel from "../components/DiagonalCarousel";
 import ContactForm from "../components/ContactForm";
+import JobDescription from "../components/JobDescription";
 
 const Index = () => {
     return (
@@ -72,28 +73,28 @@ const Index = () => {
                     <p>Like most problems, issues that I face when coding often require some extra imaginiation (and some good old-fashioned trial and error) to fix. Luckily, I enjoy challenges. I don't let myself design based on what I do or don't know how to code, so when it comes time to develop, I often get to learn something new.</p>
                 </Accordion>
                 <Accordion color={palette.color4} panelText="Attention to detail">
-                    <p>Description of skill goes here.</p>
+                    <p>I take pride in my work, so it is important to me that it is free from errors. I make an effort to keep track of the small details, including the seemingly minute ones that can take a design to the next level.</p>
                 </Accordion>
-                <h2>My favorite tools:</h2>
+                <h2 style={{marginTop: 40}}>My favorite tools:</h2>
                 <p>I use lots of programs and technologies to see my projects through from start to finish. For design, I love to use Figma, Axure RP, Adobe XD, Adobe Illustrator, and Adobe Photoshop. For development, I use HTML, CSS/Sass, Javascript, and React.</p>
                 <h2>Inspect my work</h2>
                 <p><StyledLink>My designs on Figma</StyledLink>&nbsp;&nbsp;&nbsp;<StyledLink>My code on Github</StyledLink></p>
             </section>
             <section>
                 <h1>My creative process</h1>
-                <Step color={palette.color1} title="Research" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.">
+                <Step color={palette.color1} title="Research" description="To create the most effective product, it is necessary for me to research competitors, primary and secondary users, and the client’s goals. I also look for examples of what has been done before, other products that target users are used to, and real or potential problems that will need to be solved. I am then able to synthesize this information to write user flows and jobs-to-be-done for the product.">
                     <img src={Glasses} alt="glasses icon"></img>
                 </Step>
-                <Step color={palette.color2} title="Brainstorm" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.">
+                <Step color={palette.color2} title="Brainstorm" description="My research serves as a guide for the planning phase—I rank tasks by importance (from both the user’s and client’s point of view). I know that the most important tasks need to be have the biggest role on the website. Sometimes, if I am stuck during brainstorming, it helps me to use the worst possible idea method, in which I imagine the worst possible solution and think through how I would fix it.">
                     <img src={Brain} alt="brain icon"></img>
                 </Step>
-                <Step color={palette.color3} title="Create" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.">
+                <Step color={palette.color3} title="Create" description="This is my favorite part! I enjoy getting to put together all of my ideas and visualizations in a way that is meaningful, useful, and engaging.">
                     <img src={Paintbrush} alt="paintbrush icon"></img>
                 </Step>
-                <Step color={palette.color4} title="Modify" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.">
+                <Step color={palette.color4} title="Modify" description="The process of creating something new from start to finish is never linear. After stepping away from my work, I go back and look for ways it can be refined. I also make changes based on feedback from clients or users who have tested the product.">
                     <img src={Wrench} alt="wrench icon"></img>
                 </Step>
-                <Step color={palette.color5} title="Deliver" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.">
+                <Step color={palette.color5} title="Deliver" description="Once all the changes have been made, I tie up any loose ends and either send the finished product to the client or publish it myself.">
                     <img src={Checkmark} alt="checkmark icon"></img>
                 </Step>
             </section>
@@ -101,20 +102,12 @@ const Index = () => {
                 <h1>What I've done before</h1>
                 <div className="row">
                     <div className="col-xs-12 col-md-6">
-                        <h4>Web Developer &amp; Designer</h4>
-                        <p><span className="color1">City of Grand Prairie, TX &#x2022; Jan 2022 - Present</span></p>
-                        <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio.</p>
-                        <h4>Front End Web Developer</h4>
-                        <p><span className="color2">UT Arlington &#x2022; March - Aug 2021</span></p>
-                        <p>Made daily updates to 5 department sites to maximize accessibility and user experience.</p>
+                        <JobDescription color={palette.color1} jobTitle="Web Developer &amp; Designer" companyDate="City of Grand Prairie, TX &#x2022; Jan 2022 - Present" jobDescription="description goes here"></JobDescription>
+                        <JobDescription color={palette.color2} jobTitle="Front End Web Developer" companyDate="UT Arlington &#x2022; March - Aug 2021" jobDescription="Made daily updates to 5 department sites to maximize accessibility and user experience."></JobDescription>
                     </div>
                     <div className="col-xs-12 col-md-6">
-                        <h4>Digital Marketing Intern</h4>
-                        <p><span className="color3">Children's Lighthouse &#x2022; May - Dec 2021</span></p>
-                        <p>Created effective web and social media content for 60+ franchisees.</p>
-                        <h4>Graphic Designer</h4>
-                        <p><span className="color4">American Advertising Federation &#x2022; Aug - Dec 2021</span></p>
-                        <p>Created striking graphics for social media channels and distribution to speakers.</p>
+                        <JobDescription color={palette.color3} jobTitle="Digital Marketing Intern" companyDate="Children's Lighthouse &#x2022; May - Dec 2021" jobDescription="Created effective web and social media content for 60+ franchisees."></JobDescription>
+                        <JobDescription color={palette.color4} jobTitle="Graphic Designer" companyDate="American Advertising Federation &#x2022; Aug - Dec 2021" jobDescription="Designed weekly graphics for social media channels and distribution to speakers."></JobDescription>
                     </div>
                 </div>
             </section>

@@ -6,6 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/portfolio-1-hero.jpg";
+import * as description from "../03-work/ProjectDescriptions";
 
 const Portfolio1 = () => {
     return (
@@ -14,7 +15,8 @@ const Portfolio1 = () => {
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>David's Barbeque Redesign</h1>
+                <h1>{description.Portfolio1Title}</h1>
+                <p>{description.Portfolio1Description}</p>
                 <StyledLink>View live product</StyledLink>
             </section>
             <section>

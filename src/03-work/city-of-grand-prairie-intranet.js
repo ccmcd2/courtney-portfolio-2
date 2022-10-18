@@ -6,6 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/gp-intranet-hero.jpg";
+import * as description from "../03-work/ProjectDescriptions";
 
 const GrandPrairieIntranet = () => {
     return (
@@ -14,7 +15,8 @@ const GrandPrairieIntranet = () => {
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>David's Barbeque Redesign</h1>
+                <h1>{description.GPIntranetTitle}</h1>
+                <p>{description.GPIntranetDescription}</p>
                 <StyledLink>View live product</StyledLink>
             </section>
             <section>

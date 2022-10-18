@@ -6,6 +6,7 @@ import StyledLink from "../components/StyledLink";
 import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/davids-barbeque-hero.jpg";
+import * as description from "../03-work/ProjectDescriptions";
 
 const DavidsBarbeque = () => {
     return (
@@ -14,7 +15,8 @@ const DavidsBarbeque = () => {
             <HeroSpacer></HeroSpacer>
             <section>
                 <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>David's Barbeque Redesign</h1>
+                <h1>{description.DavidsBarbequeTitle}</h1>
+                <p>{description.DavidsBarbequeDescription}</p>
                 <StyledLink href="https://ctec4309.ccm9483.uta.cloud/term-project/" alt="View live product" target="_blank">View live product</StyledLink>
             </section>
             <section>

@@ -32,6 +32,10 @@ const StepContainer = styled.div`
         p {
             margin: 0;
         }
+
+        h2 {
+            margin-top: 0;
+        }
     }
 `;
 
