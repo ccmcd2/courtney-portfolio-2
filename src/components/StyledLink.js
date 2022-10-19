@@ -23,6 +23,7 @@ const StyledLink = styled.a`
   text-decoration: none;
   max-height: 49px;
   display: inline-block;
+  margin-right: ${palette.standardMargin};
   margin-bottom: 5px;
 
   &:active, &:visited, &:link {

@@ -1,6 +1,27 @@
 import React from "react";
 import styled from "styled-components";
 import * as palette from "../Variables";
+import StyledLink from "./StyledLink";
+
+const PhoneContainer = styled.div`
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h3 {
+        text-align: center;
+        width: 50%;
+        min-width: 206px;
+        max-width: 245px;
+        height: calc(2 * 1.778rem);
+        color: ${({color}) => color}
+    }
+
+    a.button {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+`;
 
 const PhoneImage = styled.img`
     width: 50%;
@@ -10,7 +31,6 @@ const PhoneImage = styled.img`
     max-height: 531px;
     border: 8px solid ${palette.black};
     border-radius: 25px;
-    margin: 0 ${palette.standardMargin};
     transition: all 250ms ease;
 
     &:hover {
@@ -20,14 +40,18 @@ const PhoneImage = styled.img`
     }
 
     @media (min-width: 768px) {
-        margin: 0 40px;
         min-width: 245px;
     }
 `;
 
-const Phone = ({image}) => {
+const Phone = ({image, href, alt, projectTitle, color}) => {
     return (
-        <PhoneImage src={image}></PhoneImage>
+        <PhoneContainer color={color}>
+            <a href={href} alt={alt}>
+                <PhoneImage src={image}></PhoneImage>
+            </a>
+            <h3>{projectTitle}</h3>
+        </PhoneContainer>
     )
 }
 

@@ -87,27 +87,27 @@ p {
     margin: 0 0 20px 0;
 }
 
-p span {
+span {
     font-weight: 700;
 }
 
-p span.color1 {
+span.color1 {
     color: var(--yellow);
 }
 
-p span.color2 {
+span.color2 {
     color: var(--orange);
 }
 
-p span.color3 {
+span.color3 {
     color: var(--pink);
 }
 
-p span.color4 {
+span.color4 {
     color: var(--teal);
 }
 
-p span.color5 {
+span.color5 {
     color: var(--blue);
 }
 

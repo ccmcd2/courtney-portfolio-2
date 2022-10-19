@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import StyledLink from "../components/StyledLink";
 import Icon from "../components/Icon";
 import Test from "../img/royal-connor.jpg";
@@ -11,7 +11,6 @@ import Brain from "../img/brain-icon.svg";
 import Paintbrush from "../img/paintbrush-icon.svg";
 import Wrench from "../img/wrench-icon.svg";
 import Checkmark from "../img/checkmark-icon.svg";
-import Button2 from "../components/Button";
 import IntranetWireframeMobile from "../img/intranet-wireframe-mobile.png";
 import GPPublicWireframeMobile from "../img/gp-public-wireframe-mobile.png";
 import CourtneyAndCaleWireframeMobile from "../img/courtney-and-cale-wireframe-mobile.png";
@@ -20,45 +19,38 @@ import Portfolio1WireframeMobile from "../img/portfolio-1-wireframe-mobile.png";
 import RealeatherWireframeMobile from "../img/realeather-wireframe-mobile.png";
 import TCPHWireframeMobile from "../img/tcph-wireframe-mobile.png";
 import CAndWAntiquesWireframeMobile from "../img/c-and-w-antiques-wireframe-mobile.png";
-import DiagonalCarousel from "../components/DiagonalCarousel";
+import Carousel from "../components/Carousel";
 import ContactForm from "../components/ContactForm";
 import JobDescription from "../components/JobDescription";
+import * as description from "../03-work/ProjectDescriptions";
 
 const Index = () => {
+
+    
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          console.log('This will run every second!');
+        }, 4000);
+        return () => clearInterval(interval);
+      }, []);
+
     return (
         <main>
             <section>
                 <h1>Creating websites users love</h1>
                 <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
-                <DiagonalCarousel>
-                    <a href="/work/realeather" alt="Realeather website redesign">
-                        <Phone image={RealeatherWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">
-                        <Phone image={TCPHWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign">
-                        <Phone image={IntranetWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/courtney-and-cale" alt="Courtney + Cale website design">
-                        <Phone image={CourtneyAndCaleWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/davids-barbeque" alt="David's Barbeque website redesign">
-                        <Phone image={DavidsBarbequeWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/portfolio-1" alt="My first portfolio website design">
-                        <Phone image={Portfolio1WireframeMobile}></Phone>
-                    </a>
-                    <a href="/c-and-w-antiques" alt="C &amp; W Antiques website redesign">
-                        <Phone image={CAndWAntiquesWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">
-                        <Phone image={GPPublicWireframeMobile}></Phone>
-                    </a>
-                    <a href="/work/portfolio-2" alt="My second portfolio website design">
-                        <Phone image={Test}></Phone>
-                    </a>
-                </DiagonalCarousel>
+                <Carousel>
+                    <Phone href="/work/realeather" alt="Realeather website redesign" image={RealeatherWireframeMobile} projectTitle={description.RealeatherTitle}></Phone>
+                    <Phone href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design" image={TCPHWireframeMobile} projectTitle={description.TCPHTitle}></Phone>
+                    <Phone href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign" image={IntranetWireframeMobile} projectTitle={description.GPIntranetTitle}></Phone>
+                    <Phone href="/work/courtney-and-cale" alt="Courtney + Cale website design" image={CourtneyAndCaleWireframeMobile} projectTitle={description.CourtneyAndCaleTitle}></Phone>
+                    <Phone href="/work/davids-barbeque" alt="David's Barbeque website redesign" image={DavidsBarbequeWireframeMobile} projectTitle={description.DavidsBarbequeTitle}></Phone>
+                    <Phone href="/work/portfolio-1" alt="My first portfolio website design" image={Portfolio1WireframeMobile} projectTitle={description.Portfolio1Title}></Phone>
+                    <Phone href="/c-and-w-antiques" alt="C &amp; W Antiques website redesign" image={CAndWAntiquesWireframeMobile} projectTitle={description.CAndWAntiquesTitle}></Phone>
+                    <Phone href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management" image={GPPublicWireframeMobile} projectTitle={description.GPPublicTitle}></Phone>
+                    <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Test} projectTitle={description.Portfolio2Title}></Phone>
+                </Carousel>
             </section>
             <section>
                 <h1>What I bring to the table</h1>
@@ -78,7 +70,7 @@ const Index = () => {
                 <h2 style={{marginTop: 40}}>My favorite tools:</h2>
                 <p>I use lots of programs and technologies to see my projects through from start to finish. For design, I love to use Figma, Axure RP, Adobe XD, Adobe Illustrator, and Adobe Photoshop. For development, I use HTML, CSS/Sass, Javascript, and React.</p>
                 <h2>Inspect my work</h2>
-                <p><StyledLink>My designs on Figma</StyledLink>&nbsp;&nbsp;&nbsp;<StyledLink>My code on Github</StyledLink></p>
+                <p><StyledLink>My designs on Figma</StyledLink><StyledLink>My code on Github</StyledLink></p>
             </section>
             <section>
                 <h1>My creative process</h1>
@@ -102,7 +94,7 @@ const Index = () => {
                 <h1>What I've done before</h1>
                 <div className="row">
                     <div className="col-xs-12 col-md-6">
-                        <JobDescription color={palette.color1} jobTitle="Web Developer &amp; Designer" companyDate="City of Grand Prairie, TX &#x2022; Jan 2022 - Present" jobDescription="description goes here"></JobDescription>
+                        <JobDescription color={palette.color1} jobTitle="Web Developer &amp; Designer" companyDate="City of Grand Prairie, TX &#x2022; Jan 2022 - Present" jobDescription="Manage content and design of 1,100+ pages across 3 websites."></JobDescription>
                         <JobDescription color={palette.color2} jobTitle="Front End Web Developer" companyDate="UT Arlington &#x2022; March - Aug 2021" jobDescription="Made daily updates to 5 department sites to maximize accessibility and user experience."></JobDescription>
                     </div>
                     <div className="col-xs-12 col-md-6">
@@ -110,6 +102,7 @@ const Index = () => {
                         <JobDescription color={palette.color4} jobTitle="Graphic Designer" companyDate="American Advertising Federation &#x2022; Aug - Dec 2021" jobDescription="Designed weekly graphics for social media channels and distribution to speakers."></JobDescription>
                     </div>
                 </div>
+                <StyledLink href="/work" alt="View my work">View my work</StyledLink>
             </section>
             <section>
                 <h1>Let's chit-chat!</h1>

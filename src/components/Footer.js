@@ -37,6 +37,10 @@ const Prefooter = styled.div`
                 max-width: 100%;
             }
         }
+
+        a {
+            margin: 0;
+        }
     }
 `;
 
