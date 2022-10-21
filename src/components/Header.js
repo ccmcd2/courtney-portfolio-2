@@ -20,10 +20,22 @@ const logoCAnimation = keyframes`
     100% {transform: rotate(-360deg); font-size: 32px;}
 `;
 
+const logoCAnimationWhite = keyframes`
+    0% {transform: rotate(0deg); font-size: 32px; color: ${palette.white};}
+    50% {font-size: 40px;}
+    100% {transform: rotate(-360deg); font-size: 32px; color: ${palette.white};}
+`;
+
 const logoAnimation = keyframes`
     0% {background-color: ${palette.pink};}
     50% {background-color: ${palette.yellow};}
     100% {background-color: ${palette.pink};}
+`;
+
+const logoAnimationWhite = keyframes`
+    0% {background-color: ${palette.white};}
+    50% {background-color: ${palette.yellow};}
+    100% {background-color: ${palette.white};}
 `;
 
 const Nav = styled.nav`
@@ -221,8 +233,12 @@ const Logo = styled.div`
         transition: color 250ms ease;
 
         &:hover {
-            color: ${palette.white};
-            transition: color 250ms ease;
+
+            animation-name: ${logoAnimationWhite};
+
+            p {
+                animation-name: ${logoCAnimationWhite};
+            }
         }
     }
 

@@ -14,7 +14,17 @@ const PhoneContainer = styled.div`
         min-width: 206px;
         max-width: 245px;
         height: calc(2 * 1.778rem);
-        color: ${({color}) => color}
+
+        a {
+            color: ${palette.navy};
+            text-decoration: none;
+            transition: color 250ms ease;
+
+            &:hover {
+                color: ${palette.orange};
+                transition: color 250ms ease;
+            }
+        }
     }
 
     a.button {
@@ -50,7 +60,7 @@ const Phone = ({image, href, alt, projectTitle, color}) => {
             <a href={href} alt={alt}>
                 <PhoneImage src={image}></PhoneImage>
             </a>
-            <h3>{projectTitle}</h3>
+            <h3><a href={href} alt={alt}>{projectTitle}</a></h3>
         </PhoneContainer>
     )
 }

@@ -31,10 +31,17 @@ const ProjectContainer = styled.div`
         h2 {
             color: ${palette.white};
             margin-top: 0;
+            margin-bottom: 5px;
         }
 
         p {
             color: ${palette.white};
+        }
+
+        span {
+            color: ${palette.white};
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
     }
 
@@ -87,12 +94,13 @@ const ProjectContainer = styled.div`
     }
 `;
 
-const Project = ({image, children, color, title, className}) => {
+const Project = ({image, children, color, title, className, type}) => {
     return (
         <ProjectContainer color={color} className={className}>
             <img src={image}></img>
             <div>
                 <h2>{title}</h2>
+                <span>{type}</span>
                 {children}
             </div>
         </ProjectContainer>

@@ -7,6 +7,7 @@ import LinkedIn from "../img/linkedin-logo.svg";
 import Github from "../img/github-logo.svg";
 import Figma from "../img/figma-logo.svg";
 import {keyframes} from "styled-components";
+import Resume from "../img/resume.pdf";
 
 const rotateAnimation = keyframes`
 0% {transform: rotate(0deg); width: 49px; height: 49px; margin: 0;}
@@ -114,7 +115,7 @@ const Footer = () => {
             <Prefooter>
                 <div className="content">
                     <p>Get all of the nitty gritty details in a printer-friendly fashion.</p>
-                    <StyledLink>Download resume</StyledLink>
+                    <StyledLink href={Resume} target="_blank">Download resume</StyledLink>
                 </div>
             </Prefooter>
             <FooterMain>
