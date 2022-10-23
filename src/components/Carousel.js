@@ -61,8 +61,7 @@ const DURATION = 300;
 const AUTOPLAY_SPEED = 3000;
 var AUTOPLAY = true;
 
-const Carousel = ({ children }) => {
-    const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = ({ children, currentIndex, setCurrentIndex }) => {
 
     return (
         <>

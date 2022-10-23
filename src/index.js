@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
@@ -33,9 +33,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+ReactDOM.render(
     <BrowserRouter>
       <Header/>
       <Routes>
@@ -55,8 +53,8 @@ root.render(
         <Route path="*" element="no page"/>
       </Routes>
       <Footer/>
-    </BrowserRouter>
-  </React.StrictMode>
+    </BrowserRouter>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

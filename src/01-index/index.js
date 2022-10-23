@@ -27,15 +27,27 @@ import { HashLink as Link } from "react-router-hash-link";
 import Portrait2 from "../img/portrait-2.jpg";
 
 const Index = () => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const links = {
+        [0]: <a href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign">the City of Grand Prairie's intranet</a>,
+        [1]: <a href="/work/davids-barbeque" alt="David's Barbeque website redesign">David's Barbeque</a>,
+        [2]: <a href="/work/courtney-and-cale" alt="Courtney + Cale website design">Courtney + Cale</a>,
+        [3]: <a href="/work/portfolio-1" alt="My first portfolio website design">my first portfolio website</a>,
+        [4]: <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">the City of Grand Prairie's public website</a>,
+        [5]: <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">Tarrant County Public Health</a>,
+        [6]: <a href="/work/portfolio-2" alt="My current portfolio website design">my current portfolio website</a>,
+        [7]: <a href="/work/realeather" alt="Realeather website redesign">Realeather</a>,
+        [8]: <a href="/work/c-and-w-antiques" alt="C &amp; W Antiques website redesign">C &amp; W Antiques</a>
+    };
 
     return (
         <main>
             <section>
                 <h1>Creating websites users love</h1>
-                <p style={{maxWidth: 657}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for <a href="/work/davids-barbeque" alt="David's Barbeque">David’s Barbeque</a>.</p>
+                <p style={{maxWidth: 657, zIndex: 2}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for {links[currentIndex]}.</p>
                 <StyledLink style={{zIndex: 2}}href="/work" alt="View my work">View my work</StyledLink>
                 </section>
-                <Carousel>
+                <Carousel currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}>
                     <Phone href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign" image={IntranetWireframeMobile} projectTitle={description.GPIntranetTitle}></Phone>
                     <Phone href="/work/davids-barbeque" alt="David's Barbeque website redesign" image={DavidsBarbequeWireframeMobile} projectTitle={description.DavidsBarbequeTitle}></Phone>
                     <Phone href="/work/courtney-and-cale" alt="Courtney + Cale website design" image={CourtneyAndCaleWireframeMobile} projectTitle={description.CourtneyAndCaleTitle}></Phone>
@@ -101,12 +113,12 @@ const Index = () => {
             <section>
                 <h1>Let's chit-chat!</h1>
                 <div className="row">
-                    <div className="col-xs-12 col-md-7">
+                    <div className="col-xs-12 col-md-7" style={{marginBottom: 20}}>
                         <p>I’m always eager to start another project, solve another problem, or make another friend. Let me know how I can help!</p>
                         <ContactForm></ContactForm>
                     </div>
                     <div className="col-xs-12 col-md-5">
-                        <img src={Portrait2} alt="Portrait of me. I am smiling at the camera"></img>
+                        <img src={Portrait2} style={{height: 592.5}}alt="Portrait of me. I am smiling at the camera"></img>
                     </div>
                 </div>
             </section>

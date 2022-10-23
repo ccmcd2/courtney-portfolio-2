@@ -26,9 +26,45 @@ const CourtneyAndCale = () => {
             </section>
             <section>
                 <h2>Jobs to be done</h2>
-                <Accordion color={palette.color1} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color2} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color3} panelText="User title" dropdownText="text goes here"></Accordion>
+                <Accordion color={palette.color1} panelText="Wedding guest">
+                    <ul>
+                        <li>Completes RSVP form to ensure their party gets seats and meals at the wedding</li>
+                        <li>Reads frequently asked questions to make sure they’re prepared</li>
+                        <li>Looks for directions to the venue to make sure they don’t get lost</li>
+                        <li>Browses dress code to determine what they will wear</li>
+                        <li>Visits details page to verify information about the wedding</li>
+                        <li>Browses the registry to find a gift to purchase for the couple</li>
+                        <li>Reads love story to learn more about the couple's history</li>
+                        <li>Views photos of the couple to see where they got engaged</li>
+                        <li>Checks the home page to remember what day the wedding is on</li>
+                        <li>Looks at wedding info page to see pictures of the wedding venue</li>
+                        <li>Reads the contact section of the website to get in touch with the bride and groom</li>
+                    </ul>
+                </Accordion>
+                <Accordion color={palette.color2} panelText="Wedding party member">
+                    <ul>
+                        <li>Completes RSVP form to make sure their plus-one is accounted for at the wedding</li>
+                        <li>Looks for directions to the venue to decide when to leave to get to the rehearsal dinner on time</li>
+                        <li>Browses dress code to get ideas for what their family can wear</li>
+                        <li>Reads love story to verify when the couple started dating</li>
+                        <li>Studies FAQs to find out if they can take pictures at the ceremony</li>
+                        <li>Reads FAQs to see who will be at the bachelor/bachelorette party</li>
+                        <li>Visits detials page to make sure they understood the rules for plus-ones</li>
+                        <li>Browses registry to purchase a gift for the couple</li>
+                        <li>Browses the wedding info page to see if there is information about the rehearsal dinner</li>
+                        <li>Reads the contact section to get the couple’s shared email address</li>
+                    </ul>
+                </Accordion>
+                <Accordion color={palette.color3} panelText="Vendor">
+                    <ul>
+                        <li>Reads the wedding information to find directions to the venue</li>
+                        <li>Studies the FAQs to determine where they should go on the wedding day</li>
+                        <li>Examines pictures of the venue to determine where to set up</li>
+                        <li>Looks at pictures of the couple to be able to recognize the bride and groom on the wedding day</li>
+                        <li>Browses the details page to find the dress code for the event</li>
+                        <li>Reads the contact section to record contact info for the couple</li>
+                    </ul>
+                </Accordion>
             </section>
             <section>
                 <h2>Wireframes</h2>

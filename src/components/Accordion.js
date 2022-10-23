@@ -49,13 +49,18 @@ const AccordionContainer = styled.div`
     }
 `;
 
+const StyledCarrot = styled.img`
+    transform: rotate(${({open}) => open ? '180deg' : '0deg'});
+    transform-origin: center;
+`;
+
 const Accordion = ({ panelText, children, color }) => {
     const [open, setOpen] = useState(false);
     const [answerHeight, setAnswerHeight] = useState(0);
 
     return (
         <AccordionContainer color={color}>
-            <div onClick={() => setOpen(!open)} className="panel">{panelText}<span><img src={Carrot}></img></span></div>
+            <div onClick={() => setOpen(!open)} className="panel">{panelText}<span><StyledCarrot src={Carrot} alt="arrow" open={open}/></span></div>
             <div style={{ height: open ? answerHeight : 0, overflowY: 'hidden', transition: 'all 250ms ease' }}>
                 <Measure scroll onResize={(content) => {
                     setAnswerHeight(content.scroll.height);
