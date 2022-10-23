@@ -7,6 +7,7 @@ import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/c-and-w-antiques-hero2.jpg";
 import * as description from "../03-work/ProjectDescriptions";
+import ProjectIntro from "../components/ProjectIntro"
 
 const CAndWAntiques = () => {
     return (
@@ -14,14 +15,11 @@ const CAndWAntiques = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>{description.CAndWAntiquesTitle}</h1>
-                <p>{description.CAndWAntiquesDescription}</p>
-                <StyledLink>View live product</StyledLink>
+                <ProjectIntro title={description.CAndWAntiquesTitle} description={description.CAndWAntiquesDescription} type={description.CAndWAntiquesType} link="" date="Fall 2021" tools="Adobe XD, HTML, CSS, JavaScript"></ProjectIntro>
             </section>
             <section>
                 <h2>User Flows</h2>
-                <StyledLink>View full user flows</StyledLink>
+                <StyledLink style={{marginBottom: 20}}>View full user flows</StyledLink>
                 <Step color={palette.color1} title="First" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color2} title="Second" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color3} title="Third" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
@@ -29,9 +27,24 @@ const CAndWAntiques = () => {
             </section>
             <section>
                 <h2>Jobs to be done</h2>
-                <Accordion color={palette.color1} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color2} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color3} panelText="User title" dropdownText="text goes here"></Accordion>
+                <Accordion color={palette.color1} panelText="Potential customer">
+                    <ul>
+                        <li>Views listings to see what items are available for purchase</li>
+                        <li>Reads store hours to plan a good time to visit</li>
+                        <li>Reads the contact page to find a good number to call with specific questions</li>
+                        <li>Browses the FAQ section to get more information on the buying process</li>
+                        <li>Studies the map page to determine the fastest way to get to the store</li>
+                    </ul>
+                </Accordion>
+                <Accordion color={palette.color2} panelText="Potential seller">
+                    <ul>
+                        <li>Reads listing to compare what the the antique store currently sells to what they want to sell</li>
+                        <li>Reads store hours to plan a good time to visit</li>
+                        <li>eads the contact page to find a good number to call with specific questions</li>
+                        <li>Studies the map page to determine how far they will have to drive to sell their antiques</li>
+                        <li>Browses the FAQ section to get more information on the selling process</li>
+                    </ul>
+                </Accordion>
             </section>
             <section>
                 <h2>Wireframes</h2>

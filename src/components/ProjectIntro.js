@@ -13,20 +13,21 @@ const ProjectIntroContainer = styled.div`
 
         span.color5 {
             display: inline-block;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
     }
 `;
 
-const ProjectIntro = ({title, description, link, date, tools}) => {
+const ProjectIntro = ({title, description, link, date, tools, type, children}) => {
     return (
         <ProjectIntroContainer>
             <h1>{title}</h1>
             <p className="info">
-                <span className="color5">{date}</span><br/>
+                <span className="color5">{type} &#x2022; {date}</span><br/>
                 <span className="color2">Tools used: {tools}</span>
             </p>
             <p>{description}</p>
+            {children}
             <StyledLink href={link} target="_blank" alt="View live product">View live product</StyledLink>
         </ProjectIntroContainer>
     )

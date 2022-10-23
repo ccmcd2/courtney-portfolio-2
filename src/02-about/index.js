@@ -29,7 +29,7 @@ const About = () => {
                         }
                         console.log(size);
                         return (
-                            <div className="col-xs-12 col-md-7">
+                            <div className="col-xs-12 col-md-7" style={{marginBottom: 20}}>
                                 <p>I am passionate about creating engaging and exciting websites that users love and understand. I have professional and academic experience in web development and web, user experience, and graphic design for restaurants, stores, governments, weddings, schools, and personal portfolios.</p>
                                 <p>I am graduating from the University of Texas at Arlington in December 2022 with bachelor’s degrees in communication technology, advertising, and public relations; a minor in business administration; and a certificate in digital media. (That's me in the silly square cap {content}.)</p>
                                 <p>Although my education has provided me with a varied skillset, I plan to focus my career on web design and development.</p>

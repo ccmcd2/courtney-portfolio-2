@@ -7,6 +7,7 @@ import Accordion from "../components/Accordion";
 import HeroImage from "../img/courtney-and-cale-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro";
+import UserFlow from "../img/courtney-and-cale-user-flow.pdf";
 
 const CourtneyAndCale = () => {
     return (
@@ -14,11 +15,11 @@ const CourtneyAndCale = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.CourtneyAndCaleTitle} description={description.CourtneyAndCaleDescription} link="https://courtneyandcale.com" date="Summer 2022" tools="React, HTML, CSS, Figma"></ProjectIntro>
+                <ProjectIntro title={description.CourtneyAndCaleTitle} description={description.CourtneyAndCaleDescription} link="https://courtneyandcale.com" date="Summer 2022" tools="React, HTML, CSS, Figma" type={description.CourtneyAndCaleType}></ProjectIntro>
             </section>
             <section>
-                <h2>User Flows</h2>
-                <StyledLink style={{marginBottom: 25}}>View full user flows</StyledLink>
+                <h2>User Flow</h2>
+                <StyledLink style={{marginBottom: 25}} href={UserFlow} target="_blank">View full user flow</StyledLink>
                 <Step color={palette.color1} title="First" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color2} title="Second" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color3} title="Third" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>

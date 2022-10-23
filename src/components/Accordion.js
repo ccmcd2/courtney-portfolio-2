@@ -2,7 +2,7 @@ import React, {useState, useEffect, useRef} from "react";
 import styled from "styled-components";
 import * as palette from "../Variables";
 import Measure from 'react-measure';
-import Carrot from "../img/carrot-icon.svg";
+import Carrot from "../img/carrot-icon.png";
 
 const AccordionContainer = styled.div`
     width: 100%;
@@ -28,11 +28,6 @@ const AccordionContainer = styled.div`
             font-size: 1.15em;
             transition: font-size 250ms ease;
         }
-
-        img {
-            width: 30px;
-            height: auto;
-        }
     }
 
     .dropdown {
@@ -50,8 +45,11 @@ const AccordionContainer = styled.div`
 `;
 
 const StyledCarrot = styled.img`
-    transform: rotate(${({open}) => open ? '180deg' : '0deg'});
+    transform: rotate(${({open}) => open ? '-180deg' : '0deg'});
     transform-origin: center;
+    width: 20px;
+    height: auto;
+    transition: transform 250ms ease;
 `;
 
 const Accordion = ({ panelText, children, color }) => {

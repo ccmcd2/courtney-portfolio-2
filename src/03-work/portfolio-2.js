@@ -15,7 +15,7 @@ const Portfolio2 = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-            <ProjectIntro title={description.Portfolio2Title} description={description.Portfolio2Description} link="https://courtneyandcale.com" date="Fall 2022" tools="React, HTML, CSS, Figma"></ProjectIntro>
+            <ProjectIntro title={description.Portfolio2Title} description={description.Portfolio2Description} link="" date="Fall 2022" tools="React, HTML, CSS, Figma"></ProjectIntro>
             </section>
             <section>
                 <h2>User Flows</h2>
@@ -51,15 +51,15 @@ const Portfolio2 = () => {
                         <li>Browses case studies to view work I've done for similar clients</li>
                         <li>Completes the contact form to inquire about my services</li>
                         <li>Views my about page to verify credibility</li>
-                        <li>Visits your Linkedin page to see if we have any mutual connections</li>
+                        <li>Visits my Linkedin page to see if we have any mutual connections</li>
                         <li>Resizes their browser window to see if my work is responsive</li>
                     </ul>
                 </Accordion>
                 <Accordion color={palette.color3} panelText="Colleague">
                     <ul>
                         <li>Views my case studies to verify what I am able to do</li>
-                        <li>Views your Linkedin page to add me as a connection</li>
-                        <li>Shares my portfolio to recommend you to someone else</li>
+                        <li>Views my Linkedin page to add me as a connection</li>
+                        <li>Shares my portfolio to recommend me to someone else</li>
                         <li>Reads my about page to see if we would make good collaborators for a project</li>
                     </ul>
                 </Accordion>

@@ -56,7 +56,7 @@ const Index = () => {
                     <Phone href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design" image={TCPHWireframeMobile} projectTitle={description.TCPHTitle}></Phone>
                     <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Test} projectTitle={description.Portfolio2Title}></Phone>
                     <Phone href="/work/realeather" alt="Realeather website redesign" image={RealeatherWireframeMobile} projectTitle={description.RealeatherTitle}></Phone>
-                    <Phone href="/c-and-w-antiques" alt="C &amp; W Antiques website redesign" image={CAndWAntiquesWireframeMobile} projectTitle={description.CAndWAntiquesTitle}></Phone>
+                    <Phone href="/work/c-and-w-antiques" alt="C &amp; W Antiques website redesign" image={CAndWAntiquesWireframeMobile} projectTitle={description.CAndWAntiquesTitle}></Phone>
                 </Carousel>
             <section>
                 <h1>What I bring to the table</h1>

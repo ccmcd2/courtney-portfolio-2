@@ -53,7 +53,7 @@ const Nav = styled.nav`
     background-color: ${palette.navy};
     width: 100vw;
     padding: 0 ${palette.standardPadding};
-    z-index: 1;
+    z-index: 3;
 
     &.white {
         ul li a {

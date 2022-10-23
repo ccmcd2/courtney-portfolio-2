@@ -7,6 +7,7 @@ import Step from "../components/Step";
 import Accordion from "../components/Accordion";
 import HeroImage from "../img/gp-public-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
+import ProjectIntro from "../components/ProjectIntro";
 
 const GrandPrairiePublic = () => {
     return (
@@ -14,14 +15,11 @@ const GrandPrairiePublic = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <p><span className="color5">Website Redesign &#x2022; Spring 2022</span></p>
-                <h1>{description.GPPublicTitle}</h1>
-                <p>{description.GPPublicDescription}</p>
-                <StyledLink>View live product</StyledLink>
+                <ProjectIntro title={description.GPPublicTitle} description={description.GPPublicDescription} type={description.GPPublicType} link="" date="January 2022 - Present" tools="OpenCities (CMS), OpenForms, HTML, CSS, JavaScript"></ProjectIntro>
             </section>
             <section>
                 <h2>User Flows</h2>
-                <StyledLink>View full user flows</StyledLink>
+                <StyledLink style={{marginBottom: 20}}>View full user flows</StyledLink>
                 <Step color={palette.color1} title="First" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color2} title="Second" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
                 <Step color={palette.color3} title="Third" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
@@ -29,9 +27,45 @@ const GrandPrairiePublic = () => {
             </section>
             <section>
                 <h2>Jobs to be done</h2>
-                <Accordion color={palette.color1} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color2} panelText="User title" dropdownText="text goes here"></Accordion>
-                <Accordion color={palette.color3} panelText="User title" dropdownText="text goes here"></Accordion>
+                <Accordion color={palette.color1} panelText="Resident">
+                    <ul>
+                        <li>Searches for the department or page they need</li>
+                        <li>Completes a form on the "Report an Issue" page to solve a proble they are facing</li>
+                        <li>Reads the contact page to find the main phone number for the city</li>
+                        <li>Visits a department's page to find a specific phone number to call to get help</li>
+                        <li>Views list of adoptable pets to find their next furry friend</li>
+                        <li>Enters their address to find events and popular locations in their neighborhood</li>
+                        <li>Searches the library catalog for a book they want to read</li>
+                        <li>Reads information on the water department's pages to find out how they can pay their water bill</li>
+                        <li>Fills out a form to pay the traffic citation online</li>
+                        <li>Browses job listings to see if they are qualified for any jobs with the city</li>
+                        <li>Reads top news stories to stay up to date on the happenings in their community</li>
+                        <li>Browses upcoming events to find something to do in the coming week</li>
+                        <li>Completes an online form to contact their local City Council member</li>
+                    </ul>
+                </Accordion>
+                <Accordion color={palette.color2} panelText="Business owner">
+                    <ul>
+                        <li>Fills out a form to apply for a permit for construction at their business</li>
+                        <li>Calls the water department to get more information about applying for commercial water service</li>
+                        <li>Reads about Clean Prairie to see if their business qualifies as a Clean Prairie company</li>
+                        <li>Views event listings on the City Counil page to find the date and location of the next City Council meeting</li>
+                        <li>Completes a form to apply for commercial garbage collection</li>
+                        <li>Watches a video to learn how to become a vendor for the city</li>
+                        <li>Browses available commercial properties to find a new property to purchase</li>
+                        <li>Apply to be a vendor at the Farmers Market to sell their products to local residents</li>
+                    </ul>
+                </Accordion>
+                <Accordion color={palette.color3} panelText="City employee">
+                    <ul>
+                        <li>Searches the website to find a link to the employee intranet</li>
+                        <li>Visits their department's page to make sure information is up to date</li>
+                        <li>Reads contact information on another department's page to find a phone number for a specific colleague</li>
+                        <li>Searches the Commmunity Calendar to find out when the next public meeting is happening</li>
+                        <li>Reads the latest news stories to stay up to date on what is happening in the city</li>
+                        <li>Browses upcoming events to see if there is anything their families might enjoy doing on the weekend</li>
+                    </ul>
+                </Accordion>
             </section>
             <section>
                 <h2>Wireframes</h2>
