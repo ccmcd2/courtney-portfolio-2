@@ -124,8 +124,8 @@ const Footer = () => {
                         <h3>Quick links</h3>
                         <div className="links">
                             <a href="/" alt="Home">Home</a>
-                            <a href="/about" alt="About">About</a>
                             <a href="/work" alt="My Work">My Work</a>
+                            <a href="/about" alt="About">About</a>
                             <a href="/contact" alt="Contact">Contact</a>
                         </div>
                     </div>
@@ -137,7 +137,7 @@ const Footer = () => {
                                     <img src={LinkedIn} alt="LinkedIn logo"></img>
                                 </Icon>
                             </a>
-                            <a>
+                            <a href="https://github.com/ccmcd2" target="_blank" alt="My GitHub">
                                 <Icon color={palette.color2} className="link">
                                     <img src={Github} alt="Github logo"></img>
                                 </Icon>
