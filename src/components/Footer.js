@@ -142,11 +142,6 @@ const Footer = () => {
                                     <img src={Github} alt="Github logo"></img>
                                 </Icon>
                             </a>
-                            <a>
-                                <Icon color={palette.color3} className="link">
-                                    <img src={Figma} alt="Figma logo"></img>
-                                </Icon>
-                            </a>
                         </div>
                     </div>
                     <div className="col-xs-12 col-md-4">
