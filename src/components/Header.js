@@ -278,8 +278,8 @@ const Header = () => {
                         <div class="positive"></div>
                         <div class="negative"></div>
                     </div>
-                    <li><a href="/about" alt="About">About</a></li>
                     <li><a href="/work" alt="My Work">My Work</a></li>
+                    <li><a href="/about" alt="About">About</a></li>
                     <li><a href="/contact" alt="Contact">Contact</a></li>
                 </ul>
             </Nav>
