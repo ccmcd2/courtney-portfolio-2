@@ -86,15 +86,13 @@ const CourtneyAndCale = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>The hardest part of this project for me was actually coming up with the information to put on the page. Since I didn't have a strict deadline, I very much enjoyed taking my time designing and developing it.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I mostly have the site how I want it, so there is not much I would change. I plan on adding an RSVP page and call to action when the day of the wedding gets closer.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I created a website that users can navigate to learn more about my wedding. This is also my first project that I built in React, and I am proud of it.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Since this was my first time using React, I learned a lot about it in the making of this project. Some firsts include: building reusable components (goodbye copy and paste!), creating a countdown component, and creating a tabbed component using a state hook.</p>
             </section>
         </div>
     )

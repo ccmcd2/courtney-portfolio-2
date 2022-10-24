@@ -74,15 +74,14 @@ const Portfolio1 = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>This is what I consider to be my first real website, and it took a lot of trial and error to get it to a point that I was comfortable with it. Everything was a challenge, from establishing a design that made sense, to branding, to writing efficient and effective code.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>First and foremost, I would switch the order of the about section and the projects section, both on the home page and in the navigation. On a portfolio site, I think information about me should have been second to examples of my work.</p>
+                <p>There are also lots of stylistic choices that could be improved upon, including hover effects, animations, backgrounds, and font sizes. Obviously, I have a new portfolio website for a reason.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Though it's not perfect by any means, creating my first real website was a big accomplishment for me. And, it helped me land a job, so it did exactly what it was intended to do.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I learned so much with this project and had so much fun along the way. I mastered the art of the flexbox, learned how to work with imported fonts, used a little bit of JavaScript for the first time, and learned how to host a website on a custom domain.</p>
             </section>
         </div>
     )

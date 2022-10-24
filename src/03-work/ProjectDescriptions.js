@@ -23,7 +23,7 @@ export const DavidsBarbequeDescription = ["In one of my classes, my teammate and
 
 export const Portfolio1Type = "Website Design";
 export const Portfolio1Title = "My First Portfolio";
-export const Portfolio1Description = "A lot has changed since I created this portfolio (including my career goals). The purpose of this website was to help me get my foot in the door in the field of communications.";
+export const Portfolio1Description = "I have learned a lot since I created this portfolio, but it was a great start for me. The purpose of this website was to help me get my foot in the door in the field of communications.";
 
 export const Portfolio2Type = "Website Design";
 export const Portfolio2Title = "My Current Portfolio";
