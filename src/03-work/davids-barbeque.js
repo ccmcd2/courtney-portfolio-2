@@ -9,6 +9,10 @@ import HeroImage from "../img/davids-barbeque-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro";
 import UserFlow from "../img/davids-barbeque-user-flow.pdf";
+import Wireframes from "../img/davids-barbeque-wireframes.zip"
+import Mobile from "../img/davids-barbeque-wireframe-mobile-full.png";
+import Desktop from "../img/davids-barbeque-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const DavidsBarbeque = () => {
     return (
@@ -65,8 +69,9 @@ const DavidsBarbeque = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href="https://www.figma.com/file/naNhx0WdKyXx6m07es6RSy/David's-Barbeque?node-id=0%3A1" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
+                <StyledLink href={Wireframes} target="_blank" alt="Download all pages as PDF">Download all pages as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>

@@ -9,6 +9,10 @@ import HeroImage from "../img/gp-intranet-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro"
 import UserFlow from "../img/gp-intranet-user-flow.pdf";
+import Wireframe from "../img/gp-intranet-wireframe.pdf";
+import Mobile from "../img/gp-intranet-wireframe-mobile.png";
+import Desktop from "../img/gp-intranet-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const GrandPrairieIntranet = () => {
     return (
@@ -61,8 +65,9 @@ const GrandPrairieIntranet = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href="https://www.figma.com/file/iw1HjE5Gra9uGao2bqjgK1/Raving-Fans-Wireframe-(Copy)?node-id=1%3A8" target="_blank" alt="View on Figma">View all pages on Figma</StyledLink>
+                <StyledLink href={Wireframe} target="_blank" alt="Download as PDF">Download all pages as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Insights gained</h2>

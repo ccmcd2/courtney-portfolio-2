@@ -9,6 +9,10 @@ import HeroImage from "../img/realeather-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro"
 import UserFlow from "../img/realeather-user-flow.pdf";
+import Wireframes from "../img/realeather-wireframe.pdf";
+import Mobile from "../img/realeather-wireframe-mobile-full.png";
+import Desktop from "../img/realeather-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const Realeather = () => {
     return (
@@ -57,8 +61,8 @@ const Realeather = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href={Wireframes} target="_blank" alt="Download as PDF">Download as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Insights gained</h2>

@@ -8,6 +8,10 @@ import HeroImage from "../img/courtney-and-cale-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro";
 import UserFlow from "../img/courtney-and-cale-user-flow.pdf";
+import Wireframes from "../img/courtney-and-cale-wireframes.zip";
+import Mobile from "../img/courtney-and-cale-wireframe-mobile-full.png";
+import Desktop from "../img/courtney-and-cale-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const CourtneyAndCale = () => {
     return (
@@ -70,8 +74,9 @@ const CourtneyAndCale = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href="https://www.figma.com/file/guH9kJwjBDAv5RTDKuY4zn/Courtney-%2B-Cale?node-id=2%3A22" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
+                <StyledLink href={Wireframes}>Download all pages as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>

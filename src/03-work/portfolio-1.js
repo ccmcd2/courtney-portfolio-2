@@ -9,6 +9,10 @@ import HeroImage from "../img/portfolio-1-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro";
 import UserFlow from "../img/portfolio-1-user-flow.pdf";
+import Wireframes from "../img/portfolio-1-wireframes.zip";
+import Mobile from "../img/portfolio-1-wireframe-mobile-full.png";
+import Desktop from "../img/portfolio-1-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const Portfolio1 = () => {
     return (
@@ -59,8 +63,8 @@ const Portfolio1 = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href={Wireframes} target="_blank" alt="Download all pages as PDF">Download all pages as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>

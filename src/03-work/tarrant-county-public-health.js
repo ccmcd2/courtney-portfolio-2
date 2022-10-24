@@ -9,6 +9,10 @@ import HeroImage from "../img/tcph-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro";
 import UserFlow from "../img/tcph-user-flow.pdf";
+import Wireframes from "../img/tcph-wireframes.zip";
+import Mobile from "../img/tcph-wireframe-mobile-full.png";
+import Desktop from "../img/tcph-wireframe-desktop.png";
+import WireframeDisplay from "../components/WireframeDisplay";
 
 const TCPH = () => {
     return (
@@ -48,8 +52,8 @@ const TCPH = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink>View on Figma</StyledLink>
-                <StyledLink>Download as PDF</StyledLink>
+                <StyledLink href={Wireframes} target="_blank" alt="Download all pages as PDF">Download all pages as PDF</StyledLink>
+                <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>
