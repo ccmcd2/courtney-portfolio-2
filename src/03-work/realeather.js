@@ -8,6 +8,7 @@ import Accordion from "../components/Accordion";
 import HeroImage from "../img/realeather-hero.jpg";
 import * as description from "../03-work/ProjectDescriptions";
 import ProjectIntro from "../components/ProjectIntro"
+import UserFlow from "../img/realeather-user-flow.pdf";
 
 const Realeather = () => {
     return (
@@ -15,15 +16,14 @@ const Realeather = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.RealeatherTitle} description={description.RealeatherDescription} type={description.RealeatherType} link="" date="Fall 2021" tools="Adobe XD"></ProjectIntro>
+                <ProjectIntro className="no-link" title={description.RealeatherTitle} description={description.RealeatherDescription} type={description.RealeatherType} date="Fall 2021" tools="Adobe XD"></ProjectIntro>
             </section>
             <section>
-                <h2>User Flows</h2>
-                <StyledLink style={{marginBottom: 20}}>View full user flows</StyledLink>
-                <Step color={palette.color1} title="First" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color2} title="Second" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color3} title="Third" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color4} title="Fourth" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
+                <h2>User Flow</h2>
+                <StyledLink style={{marginBottom: 20}} href={UserFlow} target="_blank">View full user flow</StyledLink>
+                <Step color={palette.color1} title="Read projects and ideas" description="The user follows a link to the Projects &amp; Ideas page and views project inspiration."><p>1</p></Step>
+                <Step color={palette.color2} title="Shop for products" description="The user searches for a specific item or browses all items to find what they're looking for."><p>2</p></Step>
+                <Step color={palette.color3} title="Check out" description="After adding things to the cart, the user goes through the check out process."><p>3</p></Step>
             </section>
             <section>
                 <h2>Jobs to be done</h2>
@@ -59,11 +59,6 @@ const Realeather = () => {
                 <h2>Wireframes</h2>
                 <StyledLink>View on Figma</StyledLink>
                 <StyledLink>Download as PDF</StyledLink>
-            </section>
-            <section>
-                <h2>Product</h2>
-                <StyledLink>View live product</StyledLink>
-                <StyledLink>Inspect code</StyledLink>
             </section>
             <section>
                 <h2>Insights gained</h2>

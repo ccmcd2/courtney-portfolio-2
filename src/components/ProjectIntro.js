@@ -16,11 +16,15 @@ const ProjectIntroContainer = styled.div`
             margin-bottom: 5px;
         }
     }
+
+    &.no-link a {
+        display: none;
+    }
 `;
 
-const ProjectIntro = ({title, description, link, date, tools, type, children}) => {
+const ProjectIntro = ({title, description, link, date, tools, type, children, className}) => {
     return (
-        <ProjectIntroContainer>
+        <ProjectIntroContainer className={className}>
             <h1>{title}</h1>
             <p className="info">
                 <span className="color5">{type} &#x2022; {date}</span><br/>

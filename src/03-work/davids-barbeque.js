@@ -16,7 +16,7 @@ const DavidsBarbeque = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.DavidsBarbequeTitle} description={description.DavidsBarbequeDescription} type={description.DavidsBarbequeType} date="Spring 2022" tools="Figma, HTML, CSS, PHP" link=""></ProjectIntro>
+                <ProjectIntro title={description.DavidsBarbequeTitle} description={description.DavidsBarbequeDescription} type={description.DavidsBarbequeType} date="Spring 2022" tools="Figma, HTML, CSS, PHP" link="https://ctec4309.ccm9483.uta.cloud/term-project/"></ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -70,8 +70,8 @@ const DavidsBarbeque = () => {
             </section>
             <section>
                 <h2>Product</h2>
-                <StyledLink>View live product</StyledLink>
-                <StyledLink>Inspect code</StyledLink>
+                <StyledLink href="https://ctec4309.ccm9483.uta.cloud/term-project/" target="_blank" alt="View live product">View live product</StyledLink>
+                <StyledLink href="https://github.com/ccmcd2/davids-barbeque" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>
                 <h2>Insights gained</h2>

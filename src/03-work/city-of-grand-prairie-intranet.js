@@ -16,7 +16,7 @@ const GrandPrairieIntranet = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.GPIntranetTitle} description={description.GPIntranetDescription} type={description.GPIntranetType} link="" date="September 2022" tools="Figma"></ProjectIntro>
+                <ProjectIntro className="no-link" title={description.GPIntranetTitle} description={description.GPIntranetDescription} type={description.GPIntranetType} date="September 2022" tools="Figma"></ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -63,11 +63,6 @@ const GrandPrairieIntranet = () => {
                 <h2>Wireframes</h2>
                 <StyledLink>View on Figma</StyledLink>
                 <StyledLink>Download as PDF</StyledLink>
-            </section>
-            <section>
-                <h2>Product</h2>
-                <StyledLink>View live product</StyledLink>
-                <StyledLink>Inspect code</StyledLink>
             </section>
             <section>
                 <h2>Insights gained</h2>

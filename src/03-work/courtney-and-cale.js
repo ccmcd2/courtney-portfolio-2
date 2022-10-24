@@ -20,10 +20,11 @@ const CourtneyAndCale = () => {
             <section>
                 <h2>User Flow</h2>
                 <StyledLink style={{marginBottom: 25}} href={UserFlow} target="_blank">View full user flow</StyledLink>
-                <Step color={palette.color1} title="First" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color2} title="Second" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color3} title="Third" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
-                <Step color={palette.color4} title="Fourth" description="Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis."><p>1</p></Step>
+                <Step color={palette.color1} title="Find important wedding information" description="The user reads key information for the wedding, including the date, location, and dress code."><p>1</p></Step>
+                <Step color={palette.color2} title="RSVP" description="The user navigates to the RSVP page, fills out the RSVP form, and submits it."><p>2</p></Step>
+                <Step color={palette.color3} title="Buy a gift" description="After RSVPing, the user visits the Registry page. They click the link to view the Amazon registry and buy a gift via Amazon."><p>3</p></Step>
+                <Step color={palette.color4} title="Read our story" description="The user navigates to the Our Story page to learn more about our history as a couple."><p>4</p></Step>
+                <Step color={palette.color5} title="Browse FAQs" description="The user visits the FAQ page and reads the available answers."><p>5</p></Step>
             </section>
             <section>
                 <h2>Jobs to be done</h2>
@@ -75,7 +76,7 @@ const CourtneyAndCale = () => {
             <section>
                 <h2>Product</h2>
                 <StyledLink href="https://courtneyandcale.com" target="_blank" alt="View live product">View live product</StyledLink>
-                <StyledLink>Inspect code</StyledLink>
+                <StyledLink href="https://github.com/ccmcd2/courtney-and-cale" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>
                 <h2>Insights gained</h2>
