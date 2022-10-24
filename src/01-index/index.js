@@ -76,7 +76,7 @@ const Index = () => {
                 <h2 style={{marginTop: 40}}>My favorite tools:</h2>
                 <p>I use lots of programs and technologies to see my projects through from start to finish. For design, I love to use Figma, Axure RP, Adobe XD, Adobe Illustrator, and Adobe Photoshop. For development, I use HTML, CSS, Javascript, and React.</p>
                 <h2>Inspect my work</h2>
-                <p><StyledLink>My designs on Figma</StyledLink><StyledLink>My code on Github</StyledLink></p>
+                <p><StyledLink href="https://github.com/ccmcd2" alt="My code on GitHub" target="_blank">My code on Github</StyledLink></p>
             </section>
             <section>
                 <h1>My creative process</h1>

@@ -36,6 +36,14 @@ const ProjectContainer = styled.div`
 
         p {
             color: ${palette.white};
+
+            a {
+                color: ${palette.white};
+
+                &:hover {
+                    color: ${palette.navy};
+                }
+            }
         }
 
         span {

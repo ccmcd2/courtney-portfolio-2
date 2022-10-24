@@ -13,6 +13,7 @@ import Wireframe from "../img/gp-intranet-wireframe.pdf";
 import Mobile from "../img/gp-intranet-wireframe-mobile.png";
 import Desktop from "../img/gp-intranet-wireframe-desktop.png";
 import WireframeDisplay from "../components/WireframeDisplay";
+import OldVersion from "../img/gp-intranet-old.pdf";
 
 const GrandPrairieIntranet = () => {
     return (
@@ -20,7 +21,8 @@ const GrandPrairieIntranet = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro className="no-link" title={description.GPIntranetTitle} description={description.GPIntranetDescription} type={description.GPIntranetType} date="September 2022" tools="Figma"></ProjectIntro>
+                <ProjectIntro className="no-link" title={description.GPIntranetTitle} description={description.GPIntranetDescription} type={description.GPIntranetType} date="September 2022" tools="Figma">
+                </ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -65,22 +67,21 @@ const GrandPrairieIntranet = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink href="https://www.figma.com/file/iw1HjE5Gra9uGao2bqjgK1/Raving-Fans-Wireframe-(Copy)?node-id=1%3A8" target="_blank" alt="View on Figma">View all pages on Figma</StyledLink>
-                <StyledLink href={Wireframe} target="_blank" alt="Download as PDF">Download all pages as PDF</StyledLink>
+                <StyledLink href="https://www.figma.com/file/iw1HjE5Gra9uGao2bqjgK1/Raving-Fans-Wireframe-(Copy)?node-id=1%3A8" target="_blank" alt="View on Figma">View on Figma</StyledLink>
+                <StyledLink href={Wireframe} target="_blank" alt="Download as PDF">Download as PDF</StyledLink>
                 <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>The biggest challenge with this project was finding a way to streamline information&mdash;the <a href={OldVersion} target="_blank" alt="previous version">previous version</a> of the home page was too bulky. The visual hierarchy was lacking; there were so many different boxes that users had trouble figuring out where to look. I had to find a way to give a concise view of all of the necessary topics without leaving out any information.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Most of the employees I talked to said their main use for Raving Fans was to either submit a service request, find a certain form, or check their pay stub. I would have moved the "Pay and Leave" section higher up on the page, since that is what users are looking for, but the city wanted to emphasize the slideshow and news section.</p>
+                <p>I also don't love the categories of the secondary navigation, but I decided it was best not to change too much, since most users are already used to the navigation being the way it is.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I produced a mobile-friendly design for the intranet's home page that Grand Prairie is going to implement in their redesign of the site. I also simplified the user experience by consolidating the mass of grey boxes that was present in the <a href={OldVersion} target="_blank" alt="previous version">previous version</a> of the site. Finally, I tweaked the color scheme and updated the text with the city's new typeface.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>This project helped me improve my client communication skills. It is one of the first projects that I did for non-academic, non-self-serving purposes. I appreciated talking back and forth with the client and getting feedback from current users.</p>
             </section>
         </div>
     )

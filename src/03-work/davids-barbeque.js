@@ -13,6 +13,7 @@ import Wireframes from "../img/davids-barbeque-wireframes.zip"
 import Mobile from "../img/davids-barbeque-wireframe-mobile-full.png";
 import Desktop from "../img/davids-barbeque-wireframe-desktop.png";
 import WireframeDisplay from "../components/WireframeDisplay";
+import Proposal from "../img/davids-barbeque-proposal.pdf";
 
 const DavidsBarbeque = () => {
     return (
@@ -20,7 +21,9 @@ const DavidsBarbeque = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.DavidsBarbequeTitle} description={description.DavidsBarbequeDescription} type={description.DavidsBarbequeType} date="Spring 2022" tools="Figma, HTML, CSS, PHP" link="https://ctec4309.ccm9483.uta.cloud/term-project/"></ProjectIntro>
+                <ProjectIntro title={description.DavidsBarbequeTitle} description={description.DavidsBarbequeDescription} type={description.DavidsBarbequeType} date="Spring 2022" tools="Figma, HTML, CSS, PHP" link="https://ctec4309.ccm9483.uta.cloud/term-project/">
+                    <p>We created this website to be a part of our digital marketing strategy for David's Barbeque. You can read our full project proposal <a href={Proposal} target="_blank" alt="Marketing Strategy Proposal">here</a>.</p>
+                </ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -81,15 +84,14 @@ const DavidsBarbeque = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I had never used PHP (or any server-side language) before starting this project, so everything done in PHP was completely brand new to me. Luckily, my teammate had some experience, and we were able to figure it out together.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>The design is not consistent across the site because the way that the work was split up meant that I was developing the home, catering, story, and contact pages while my teammate worked on the menu and store pages. If I were to redo this project, I would make sure to create a more cohesive product.</p>
+                <p>Also, our "Order Online" page points to the "Menu" page. In the future, I wouldn't do this again&mdash;I think it leads to confusion for the user. I would probably follow the popular convention of only having an "Order Online" page and displaying menu items there.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>My teammate and I produced a website with a functional mock storefront. We used the site to strengthen the branding for David's Barbeque and to create a sense of community for local users via the community calendar.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I learned lots about PHP, including how to create and use cookies. This was also one of my first times using Figma; I got familiar with the platform and learned how to create reusable components and styles.</p>
             </section>
         </div>
     )

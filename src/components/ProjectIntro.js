@@ -17,7 +17,7 @@ const ProjectIntroContainer = styled.div`
         }
     }
 
-    &.no-link a {
+    &.no-link .button {
         display: none;
     }
 `;
@@ -27,12 +27,12 @@ const ProjectIntro = ({title, description, link, date, tools, type, children, cl
         <ProjectIntroContainer className={className}>
             <h1>{title}</h1>
             <p className="info">
-                <span className="color5">{type} &#x2022; {date}</span><br/>
-                <span className="color2">Tools used: {tools}</span>
+                <span className="color3">{type} &#x2022; {date}</span><br/>
+                <span className="color5">Tools used: {tools}</span>
             </p>
             <p>{description}</p>
             {children}
-            <StyledLink href={link} target="_blank" alt="View live product">View live product</StyledLink>
+            <StyledLink href={link} className="button" target="_blank" alt="View live product">View live product</StyledLink>
         </ProjectIntroContainer>
     )
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import GPIntranetOld from "../img/gp-intranet-old.pdf";
 
 export const CAndWAntiquesType = "Website Redesign";
 export const CAndWAntiquesTitle = "C & W Antiques";
@@ -6,7 +7,7 @@ export const CAndWAntiquesDescription = "C & W Antiques is an antique store in G
 
 export const GPIntranetType = "Prototype";
 export const GPIntranetTitle = "City of Grand Prairie Intranet";
-export const GPIntranetDescription = "One of my tasks at work for the City of Grand Prairie was to redesign the home page of their employee intranet (called Raving Fans). The original site was created several years ago and was significantly outdated. I was in charge of coming up with a design to make the home page more responsive, intuitive, and attractive.";
+export const GPIntranetDescription = ['One of my tasks at work for the City of Grand Prairie was to redesign the home page of their employee intranet (called Raving Fans). The ', <a href={GPIntranetOld} target="_blank" alt="original site">original site</a>, ' was created several years ago and was outdated both in technology and design. I was in charge of coming up with a new design to make the home page more responsive, intuitive, and attractive.'];
 
 export const GPPublicType = "Website Design and Management";
 export const GPPublicTitle = "City of Grand Prairie Public Site"
@@ -18,7 +19,7 @@ export const CourtneyAndCaleDescription = "This has been my favorite project so 
 
 export const DavidsBarbequeType = "Website Redesign";
 export const DavidsBarbequeTitle = "David's Barbeque";
-export const DavidsBarbequeDescription = "In one of my classes, my teammate and I were tasked with finding a company or non-profit in the community that could use a new website. We chose David’s Barbeque, a small, family-owned barbeque joint in Pantego, Texas. Their current website did not have a way to order online and was missing important information about their store. The design also desperately needed an update.";
+export const DavidsBarbequeDescription = ["In one of my classes, my teammate and I redesigned the website of David's Barbeque, a small, family-owned barbeque joint in Pantego, Texas. Their ", <a href="http://www.davidsbarbecuetx.com/" target="_blank" alt="current website">current website</a>, " was outdated, did not have a way to order online, and was missing important information about their store. The client also wanted to build a sense of community with the website."];
 
 export const Portfolio1Type = "Website Design";
 export const Portfolio1Title = "My First Portfolio";
