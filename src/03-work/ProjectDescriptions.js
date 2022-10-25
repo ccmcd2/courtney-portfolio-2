@@ -11,7 +11,7 @@ export const GPIntranetDescription = ['One of my tasks at work for the City of G
 
 export const GPPublicType = "Website Design and Management";
 export const GPPublicTitle = "City of Grand Prairie Public Site"
-export const GPPublicDescription = "As a web developer and designer for the City of Grand Prairie, I manage the content and design for 1000+ pages on the city's public site using a content management system, OpenCities.";
+export const GPPublicDescription = "As a web developer and designer for the City of Grand Prairie, I helped launch a redesigned website in March of 2022. I managed the content and design for 1000+ pages on the city's public site using a content management system, OpenCities.";
 
 export const CourtneyAndCaleType = "Website Design";
 export const CourtneyAndCaleTitle = "Courtney + Cale";
@@ -27,7 +27,7 @@ export const Portfolio1Description = "I have learned a lot since I created this 
 
 export const Portfolio2Type = "Website Design";
 export const Portfolio2Title = "My Current Portfolio";
-export const Portfolio2Description = "Look familiar? I designed this site to showcase all of my work so far. This was my second project that I developed using the React framework, and it was a huge learning opportunity for me.";
+export const Portfolio2Description = "I designed this site to showcase all of my work so far. This was my second project that I developed using React, and it was a huge learning opportunity for me.";
 
 export const RealeatherType = "Prototype";
 export const RealeatherTitle = "Realeather";
@@ -35,4 +35,4 @@ export const RealeatherDescription = "I worked with my team to create an adverti
 
 export const TCPHType = "Website Design";
 export const TCPHTitle = "Tarrant County Public Health";
-export const TCPHDescription = "One of my capstone projects was to create a PR campaign for Tarrant County Public Health. I built this website as an information hub for unvaccinated people, specifically Hispanics in Tarrant County, to learn about the COVID-19 vaccine.";
+export const TCPHDescription = "One of my capstone projects at school was to create a communications campaign for Tarrant County Public Health. I built this website as an information hub for unvaccinated people, specifically Hispanics in Tarrant County, to learn about the COVID-19 vaccine.";

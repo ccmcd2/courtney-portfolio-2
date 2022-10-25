@@ -16,7 +16,17 @@ const GrandPrairiePublic = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.GPPublicTitle} description={description.GPPublicDescription} type={description.GPPublicType} link="https://www.gptx.org" date="January 2022 - Present" tools="OpenCities (CMS), OpenForms, HTML, CSS, JavaScript"></ProjectIntro>
+                <ProjectIntro title={description.GPPublicTitle} description={description.GPPublicDescription} type={description.GPPublicType} link="https://www.gptx.org" date="January 2022 - Present" tools="OpenCities (CMS), OpenForms, HTML, CSS, JavaScript">
+                    <p>You can view an archive of the old version of the site <a href="https://web.archive.org/web/20211231163912/http://www.gptx.org/" alt="old version of the site" target="_blank">here</a>.</p>
+                    <p>I have made changes to nearly every page on the website, but some of the more interesting ones include:</p>
+                    <ul style={{marginBottom: 20}}>
+                        <li><a href="https://www.gptx.org/Home" target="_blank" alt="home page">Home page</a></li>
+                        <li><a href="https://www.gptx.org/Departments/Public-Health-and-Environmental-Quality" target="_blank" alt="Public Health &amp; Environmental Quality Section">Public Health &amp; Environmental Quality section</a></li>
+                        <li><a href="https://www.gptx.org/Departments/Human-Resources" target="_blank" alt="Human Resources section">Human Resources section</a></li>
+                        <li><a href="https://www.gptx.org/About-Grand-Prairie/Live-Life-Grand" target="_blank" alt="Live Life Grand">Live Life Grand</a></li>
+                        <li><a href="https://www.gptx.org/About-Grand-Prairie/EpicCentral-Grand-Prairie" target="_blank" alt="EpicCentral">EpicCentral</a></li>
+                    </ul>
+                </ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -75,15 +85,14 @@ const GrandPrairiePublic = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>One of the biggest challenges I have faced with this website is deciding what information and tools to prioritize. I created feedback forms on some of the pages to get input from our users, which has been very helpful in creating pages with a useful, intentional layout.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Most of the things I don't like about the site have to do with the way the content management system is designed. Since I am used to coding form scracth, there was an adjustment period for getting used to this site.</p>
+                <p>Other than that, there are a few small changes I would make if everything were up to me, like tweaks to the color scheme, hover styles, and navigation.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I helped launch a newly redesigned website, for which I designed and built out many of the pages. I also performed routine maintenance to the site to make sure everything is updated and in compliance with regulations.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>This long-term project has provided with opportunities for fine-tuning my time management skills, extensive writing for the web, and learning more about content management systems.</p>
             </section>
         </div>
     )

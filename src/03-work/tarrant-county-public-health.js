@@ -13,6 +13,7 @@ import Wireframes from "../img/tcph-wireframes.zip";
 import Mobile from "../img/tcph-wireframe-mobile-full.png";
 import Desktop from "../img/tcph-wireframe-desktop.png";
 import WireframeDisplay from "../components/WireframeDisplay";
+import CommPlan from "../img/tcph-communications-plan.pdf";
 
 const TCPH = () => {
     return (
@@ -20,7 +21,9 @@ const TCPH = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro title={description.TCPHTitle} description={description.TCPHDescription} type={description.TCPHType} link="https://3350.ccm9483.uta.cloud/tarrant-county-vaccine-website/" date="Fall 2021" tools="Adobe XD, HTML, CSS, JavaScript"></ProjectIntro>
+                <ProjectIntro title={description.TCPHTitle} description={description.TCPHDescription} type={description.TCPHType} link="https://3350.ccm9483.uta.cloud/tarrant-county-vaccine-website/" date="Fall 2021" tools="Adobe XD, HTML, CSS, JavaScript">
+                    <p>The comprehensive communications plan can be viewed <a href={CommPlan} alt="comprehensive communications plan" target="_blank">here</a>.</p>
+                </ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -63,15 +66,14 @@ const TCPH = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>If you compare the final product to the wireframes, you'll notice they don't match completely. I had trouble getting the white box on the desktop view to be the same height as the sum of the green and blue boxes.</p>
+                <p>I also had trouble with the hover effect for the FAQ boxes&mdash;they are a bit glitchy.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Other than my inefficent code, I would make some changes to the FAQ page. If I were doing this project again, I would keep the user on the same page rather than creating a new page for each question. I would also make sure to use the pointer cursor for all buttons and links, and I would not make all of the text center-aligned.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I created a mock website that could be used to help residents of Tarrant County discern truths about the COVID-19 from falsehood and ultimately get vaccinated.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I learned a lot about conducting primary research with this project. My team created a survey and conducted focus groups to learn more about Hispanic Tarrant County residents, our target audience. I used our findings about their preferred news sources, concerns about the vaccine, and trust in governments and medical professionals to tailor the user experience.</p>
             </section>
         </div>
     )
