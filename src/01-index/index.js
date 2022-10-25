@@ -23,6 +23,7 @@ import JobDescription from "../components/JobDescription";
 import * as description from "../03-work/ProjectDescriptions";
 import { HashLink as Link } from "react-router-hash-link";
 import Portrait2 from "../img/portrait-2.jpg";
+import CarouselTest from "../components/CarouselTest";
 
 const Index = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +45,7 @@ const Index = () => {
                 <p style={{maxWidth: 657, zIndex: 2}}>I’m <strong>Courtney</strong>, a UX/UI designer and developer with experience implementing innovative solutions for {links[currentIndex]}.</p>
                 <StyledLink style={{zIndex: 2}}href="/work" alt="View my work">View my work</StyledLink>
                 </section>
-                <Carousel currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}>
+                <CarouselTest currentIndex={currentIndex} setCurrentIndex={setCurrentIndex}>
                     <Phone href="/work/city-of-grand-prairie-intranet" alt="City of Grand Prairie intranet redesign" image={IntranetWireframeMobile} projectTitle={description.GPIntranetTitle}></Phone>
                     <Phone href="/work/davids-barbeque" alt="David's Barbeque website redesign" image={DavidsBarbequeWireframeMobile} projectTitle={description.DavidsBarbequeTitle}></Phone>
                     <Phone href="/work/courtney-and-cale" alt="Courtney + Cale website design" image={CourtneyAndCaleWireframeMobile} projectTitle={description.CourtneyAndCaleTitle}></Phone>
@@ -53,7 +54,7 @@ const Index = () => {
                     <Phone href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design" image={TCPHWireframeMobile} projectTitle={description.TCPHTitle}></Phone>
                     <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Test} projectTitle={description.Portfolio2Title}></Phone>
                     <Phone href="/work/realeather" alt="Realeather website redesign" image={RealeatherWireframeMobile} projectTitle={description.RealeatherTitle}></Phone>
-                </Carousel>
+                </CarouselTest>
             <section>
                 <h1>What I bring to the table</h1>
                 <h2>My strengths:</h2>

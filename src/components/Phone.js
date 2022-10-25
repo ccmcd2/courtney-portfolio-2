@@ -34,10 +34,8 @@ const PhoneContainer = styled.div`
 `;
 
 const PhoneImage = styled.img`
-    width: 50%;
+    width: 245px;
     aspect-ratio: 9/19.5;
-    max-width: 245px;
-    min-width: 206px;
     max-height: 531px;
     border: 8px solid ${palette.black};
     border-radius: 25px;
@@ -48,15 +46,11 @@ const PhoneImage = styled.img`
         border: 8px solid ${palette.orange};
         transition: all 250ms ease;
     }
-
-    @media (min-width: 768px) {
-        min-width: 245px;
-    }
 `;
 
 const Phone = ({image, href, alt, projectTitle, color}) => {
     return (
-        <PhoneContainer color={color}>
+        <PhoneContainer color={color} className="phone">
             <a href={href} alt={alt}>
                 <PhoneImage src={image}></PhoneImage>
             </a>
