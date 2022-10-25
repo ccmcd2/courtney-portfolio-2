@@ -35,7 +35,7 @@ const About = () => {
                                 <p>Although my education has provided me with a varied skillset, I plan to focus my career on web design and development.</p>
                                 <p>Of course, technologies in this field are ever-changing, so I strive to continue learning. I've come a long way since <a href="https://ctec2350.ccm9483.uta.cloud/termproject/about.html" alt="my first website" target="_blank">my first website</a>&mdash;which is plagued with unoptimized images, awkward stylistic choices, poorly written copy, and the most uninspiring fonts known to man&mdash;and I am always looking for opportunities to improve.</p>
                                 <p>I love working with teammates and clients who are driven, enthusiastic about their work, and eager to try new things. If you think we would be a good fit for each other, or you want to learn more about me, I’d love to <a href="/contact" alt="contact">hear from you</a>.</p>
-                                <StyledLink href="/contact" alt="contact me">Contact me</StyledLink>
+                                <StyledLink style={{marginBottom: 20}} href="/contact" alt="contact me">Contact me</StyledLink>
                                 <StyledLink href="https://www.linkedin.com/in/c-mcd/" alt="connect with me" target="_blank">Connect on LinkedIn</StyledLink>
                             </div>
                         );

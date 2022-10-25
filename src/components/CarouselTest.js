@@ -34,7 +34,6 @@ const SliderContainer = styled.div`
             svg {
                 height: 31px;
                 margin-top: 750px;
-                display: none;
             }
         }
     }
@@ -73,7 +72,7 @@ if (mediaQuery1200.matches) {
 }*/
 
 const DURATION = 300;
-const AUTOPLAY_SPEED = 4000;
+const AUTOPLAY_SPEED = 3300;
 var AUTOPLAY = true;
 
 const CarouselTest = ({ children, currentIndex, setCurrentIndex }) => {
@@ -81,7 +80,7 @@ const CarouselTest = ({ children, currentIndex, setCurrentIndex }) => {
     return (
         <>
             <SliderContainer duration={DURATION} displayCount={DISPLAY_COUNT} currentIndex={currentIndex} childCount={React.Children.count(children)}>
-                <Slider className="slider" prevArrow={<LeftArrow />} nextArrow={<RightArrow />} duration={DURATION} slidesToShow={DISPLAY_COUNT} autoplay={AUTOPLAY} pauseOnHover={true} autoplaySpeed={AUTOPLAY_SPEED} beforeChange={(_oldIndex, newIndex) => {
+                <Slider className="slider" prevArrow={<LeftArrow />} nextArrow={<RightArrow />} duration={DURATION} slidesToShow={DISPLAY_COUNT} arrowsBlock={false} wheel={false} swipe={false} autoplay={AUTOPLAY} pauseOnHover={true} autoplaySpeed={AUTOPLAY_SPEED} beforeChange={(_oldIndex, newIndex) => {
                     setCurrentIndex(newIndex);
                 }}>
                     {children}

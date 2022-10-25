@@ -70,7 +70,7 @@ const Portfolio2 = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink href="https://www.figma.com/file/zru6aoc1bE82k6UJg2wBA1/Portfolio-Website?node-id=1%3A84" target="_blank" alt="View all pages on Figma">View all pges on Figma</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://www.figma.com/file/zru6aoc1bE82k6UJg2wBA1/Portfolio-Website?node-id=1%3A84" target="_blank" alt="View all pages on Figma">View all pges on Figma</StyledLink>
                 <StyledLink href={Wireframes} alt="Download all pages as PDF" target="_blank">Download all pages as PDF</StyledLink>
                 <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>

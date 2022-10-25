@@ -72,13 +72,13 @@ const DavidsBarbeque = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink href="https://www.figma.com/file/naNhx0WdKyXx6m07es6RSy/David's-Barbeque?node-id=0%3A1" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://www.figma.com/file/naNhx0WdKyXx6m07es6RSy/David's-Barbeque?node-id=0%3A1" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
                 <StyledLink href={Wireframes} target="_blank" alt="Download all pages as PDF">Download all pages as PDF</StyledLink>
                 <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>
-                <StyledLink href="https://ctec4309.ccm9483.uta.cloud/term-project/" target="_blank" alt="View live product">View live product</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://ctec4309.ccm9483.uta.cloud/term-project/" target="_blank" alt="View live product">View live product</StyledLink>
                 <StyledLink href="https://github.com/ccmcd2/davids-barbeque" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>

@@ -67,7 +67,7 @@ const GrandPrairieIntranet = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink href="https://www.figma.com/file/iw1HjE5Gra9uGao2bqjgK1/Raving-Fans-Wireframe-(Copy)?node-id=1%3A8" target="_blank" alt="View on Figma">View on Figma</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://www.figma.com/file/iw1HjE5Gra9uGao2bqjgK1/Raving-Fans-Wireframe-(Copy)?node-id=1%3A8" target="_blank" alt="View on Figma">View on Figma</StyledLink>
                 <StyledLink href={Wireframe} target="_blank" alt="Download as PDF">Download as PDF</StyledLink>
                 <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>

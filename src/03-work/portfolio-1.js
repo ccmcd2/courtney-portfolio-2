@@ -68,7 +68,7 @@ const Portfolio1 = () => {
             </section>
             <section>
                 <h2>Product</h2>
-                <StyledLink href="https://3350.ccm9483.uta.cloud/portfolio/index.html" target="_blank" alt="View live product">View live product</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://3350.ccm9483.uta.cloud/portfolio/index.html" target="_blank" alt="View live product">View live product</StyledLink>
                 <StyledLink href="https://github.com/ccmcd2/courtney-portfolio-1" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>

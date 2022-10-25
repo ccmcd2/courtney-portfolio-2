@@ -74,13 +74,13 @@ const CourtneyAndCale = () => {
             </section>
             <section>
                 <h2>Wireframes</h2>
-                <StyledLink href="https://www.figma.com/file/guH9kJwjBDAv5RTDKuY4zn/Courtney-%2B-Cale?node-id=2%3A22" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://www.figma.com/file/guH9kJwjBDAv5RTDKuY4zn/Courtney-%2B-Cale?node-id=2%3A22" target="_blank" alt="View all pages on Figma">View all pages on Figma</StyledLink>
                 <StyledLink href={Wireframes}>Download all pages as PDF</StyledLink>
                 <WireframeDisplay mobile={Mobile} desktop={Desktop}></WireframeDisplay>
             </section>
             <section>
                 <h2>Product</h2>
-                <StyledLink href="https://courtneyandcale.com" target="_blank" alt="View live product">View live product</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://courtneyandcale.com" target="_blank" alt="View live product">View live product</StyledLink>
                 <StyledLink href="https://github.com/ccmcd2/courtney-and-cale" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>

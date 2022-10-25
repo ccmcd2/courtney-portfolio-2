@@ -60,7 +60,7 @@ const TCPH = () => {
             </section>
             <section>
                 <h2>Product</h2>
-                <StyledLink href="https://3350.ccm9483.uta.cloud/tarrant-county-vaccine-website/" alt="View live product" target="_blank">View live product</StyledLink>
+                <StyledLink style={{marginBottom: 20}} href="https://3350.ccm9483.uta.cloud/tarrant-county-vaccine-website/" alt="View live product" target="_blank">View live product</StyledLink>
                 <StyledLink href="https://github.com/ccmcd2/tcph-vaccine-hesitancy" target="_blank" alt="Inspect code">Inspect code</StyledLink>
             </section>
             <section>
