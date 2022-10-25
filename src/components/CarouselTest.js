@@ -73,7 +73,7 @@ if (mediaQuery1200.matches) {
 
 const DURATION = 300;
 const AUTOPLAY_SPEED = 3300;
-var AUTOPLAY = true;
+var AUTOPLAY = false;
 
 const CarouselTest = ({ children, currentIndex, setCurrentIndex }) => {
 

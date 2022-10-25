@@ -21,7 +21,7 @@ const About = () => {
     return (
         <main>
             <section>
-                <h1>Headline goes here</h1>
+                <h1>Creative. Driven. Educated.</h1>
                 <div className="row">
                     <SizeMe monitorHeight={true}>{({ size }) => {
                         if(size.height !== height){

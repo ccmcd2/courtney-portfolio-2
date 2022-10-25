@@ -58,11 +58,6 @@ const Nav = styled.nav`
     &.white {
         ul li a {
             color: ${palette.white};
-            border-bottom: 3px solid ${palette.pink};
-
-            &:hover {
-                border-bottom: 3px solid ${palette.orange};
-            }
         }
 
         .bars-container div {
@@ -275,8 +270,8 @@ const Header = () => {
                 </div>
                 <ul className={menuOpen ? "open" : ""}>
                     <div className="x-container" onClick={() => setMenuOpen(false)}>
-                        <div class="positive"></div>
-                        <div class="negative"></div>
+                        <div className="positive"></div>
+                        <div className="negative"></div>
                     </div>
                     <li><a href="/work" alt="My Work">My Work</a></li>
                     <li><a href="/about" alt="About">About</a></li>

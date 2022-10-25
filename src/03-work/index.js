@@ -9,15 +9,14 @@ import CourtneyAndCaleHome from "../img/courtney-and-cale-home.png";
 import Portfolio1Home from "../img/portfolio-1-home.png";
 import RealeatherHome from "../img/realeather-home.png";
 import TCPHHome from "../img/tcph-home.png";
-import Test from "../img/royal-connor.jpg";
+import Portfolio2Home from "../img/portfolio-2-home.png";
 import * as description from "../03-work/ProjectDescriptions";
 
 const Work = () => {
     return (
         <main>
             <section>
-                <h1>Headline goes here</h1>
-                <p></p>
+                <h1 style={{marginBottom: -10}}>My work (made with love)</h1>
             </section>
             <section>
                 <Project image={DavidsBarbequeHome} alt="home page of David's Barbeque website" title={description.DavidsBarbequeTitle} type={description.DavidsBarbequeType} color={palette.color1} className="left">
@@ -48,7 +47,7 @@ const Work = () => {
                     <p>{description.TCPHDescription}</p>
                     <StyledLink href="/work/tarrant-county-public-health" alt="View project" className="secondary">View project</StyledLink>
                 </Project>
-                <Project image={Test} alt="home page of this website" title={description.Portfolio2Title} type={description.Portfolio2Type} color={palette.color3} className="left">
+                <Project image={Portfolio2Home} alt="home page of this website" title={description.Portfolio2Title} type={description.Portfolio2Type} color={palette.color3} className="left">
                     <p>{description.Portfolio2Description}</p>
                     <StyledLink href="/work/portfolio-2" alt="View project" className="secondary">View project</StyledLink>
                 </Project>

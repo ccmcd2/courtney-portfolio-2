@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import StyledLink from "../components/StyledLink";
-import Test from "../img/royal-connor.jpg";
 import Accordion from "../components/Accordion";
 import * as palette from "../Variables";
 import Phone from "../components/Phone";
@@ -24,6 +23,7 @@ import * as description from "../03-work/ProjectDescriptions";
 import { HashLink as Link } from "react-router-hash-link";
 import Portrait2 from "../img/portrait-2.jpg";
 import CarouselTest from "../components/CarouselTest";
+import Portfolio2WireframeMobile from "../img/portfolio-2-wireframe-mobile.png";
 
 const Index = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,7 +52,7 @@ const Index = () => {
                     <Phone href="/work/portfolio-1" alt="My first portfolio website design" image={Portfolio1WireframeMobile} projectTitle={description.Portfolio1Title}></Phone>
                     <Phone href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management" image={GPPublicWireframeMobile} projectTitle={description.GPPublicTitle}></Phone>
                     <Phone href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design" image={TCPHWireframeMobile} projectTitle={description.TCPHTitle}></Phone>
-                    <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Test} projectTitle={description.Portfolio2Title}></Phone>
+                    <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Portfolio2WireframeMobile} projectTitle={description.Portfolio2Title}></Phone>
                     <Phone href="/work/realeather" alt="Realeather website redesign" image={RealeatherWireframeMobile} projectTitle={description.RealeatherTitle}></Phone>
                 </CarouselTest>
             <section>
