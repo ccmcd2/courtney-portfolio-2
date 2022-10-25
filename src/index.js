@@ -11,7 +11,6 @@ import Contact from "./04-contact/index";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DavidsBarbeque from './03-work/davids-barbeque';
-import CAndWAntiques from './03-work/c-and-w-antiques';
 import GrandPrairiePublic from "./03-work/city-of-grand-prairie-public";
 import CourtneyAndCale from './03-work/courtney-and-cale';
 import Portfolio1 from './03-work/portfolio-1';
@@ -42,7 +41,6 @@ ReactDOM.render(
         <Route path="work" element={<Work/>}/>
         <Route path="contact" element={<Contact/>}/>
         <Route path="work/davids-barbeque" element={<DavidsBarbeque/>}/>
-        <Route path="work/c-and-w-antiques" element={<CAndWAntiques/>}/>
         <Route path="work/city-of-grand-prairie-public" element={<GrandPrairiePublic/>}/>
         <Route path="work/courtney-and-cale" element={<CourtneyAndCale/>}/>
         <Route path="work/portfolio-1" element={<Portfolio1/>}/>

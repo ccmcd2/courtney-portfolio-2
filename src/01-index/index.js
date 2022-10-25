@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import StyledLink from "../components/StyledLink";
-import Icon from "../components/Icon";
 import Test from "../img/royal-connor.jpg";
 import Accordion from "../components/Accordion";
 import * as palette from "../Variables";
@@ -18,7 +17,6 @@ import DavidsBarbequeWireframeMobile from "../img/davids-barbeque-wireframe-mobi
 import Portfolio1WireframeMobile from "../img/portfolio-1-wireframe-mobile.png";
 import RealeatherWireframeMobile from "../img/realeather-wireframe-mobile.png";
 import TCPHWireframeMobile from "../img/tcph-wireframe-mobile.png";
-import CAndWAntiquesWireframeMobile from "../img/c-and-w-antiques-wireframe-mobile.png";
 import Carousel from "../components/Carousel";
 import ContactForm from "../components/ContactForm";
 import JobDescription from "../components/JobDescription";
@@ -36,8 +34,7 @@ const Index = () => {
         [4]: <a href="/work/city-of-grand-prairie-public" alt="City of Grand Prairie website design &amp; management">the City of Grand Prairie's public website</a>,
         [5]: <a href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design">Tarrant County Public Health</a>,
         [6]: <a href="/work/portfolio-2" alt="My current portfolio website design">my current portfolio website</a>,
-        [7]: <a href="/work/realeather" alt="Realeather website redesign">Realeather</a>,
-        [8]: <a href="/work/c-and-w-antiques" alt="C &amp; W Antiques website redesign">C &amp; W Antiques</a>
+        [7]: <a href="/work/realeather" alt="Realeather website redesign">Realeather</a>
     };
 
     return (
@@ -56,7 +53,6 @@ const Index = () => {
                     <Phone href="/work/tarrant-county-public-health" alt="Tarrant County Public Health vaccine website design" image={TCPHWireframeMobile} projectTitle={description.TCPHTitle}></Phone>
                     <Phone href="/work/portfolio-2" alt="My second portfolio website design" image={Test} projectTitle={description.Portfolio2Title}></Phone>
                     <Phone href="/work/realeather" alt="Realeather website redesign" image={RealeatherWireframeMobile} projectTitle={description.RealeatherTitle}></Phone>
-                    <Phone href="/work/c-and-w-antiques" alt="C &amp; W Antiques website redesign" image={CAndWAntiquesWireframeMobile} projectTitle={description.CAndWAntiquesTitle}></Phone>
                 </Carousel>
             <section>
                 <h1>What I bring to the table</h1>

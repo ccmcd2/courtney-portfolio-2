@@ -13,6 +13,7 @@ import Wireframes from "../img/realeather-wireframe.pdf";
 import Mobile from "../img/realeather-wireframe-mobile-full.png";
 import Desktop from "../img/realeather-wireframe-desktop.png";
 import WireframeDisplay from "../components/WireframeDisplay";
+import Plan from "../img/realeather-marketing-plan.pdf";
 
 const Realeather = () => {
     return (
@@ -20,7 +21,9 @@ const Realeather = () => {
             <Hero image={HeroImage}></Hero>
             <HeroSpacer></HeroSpacer>
             <section>
-                <ProjectIntro className="no-link" title={description.RealeatherTitle} description={description.RealeatherDescription} type={description.RealeatherType} date="Fall 2021" tools="Adobe XD"></ProjectIntro>
+                <ProjectIntro className="no-link" title={description.RealeatherTitle} description={description.RealeatherDescription} type={description.RealeatherType} date="Fall 2021" tools="Adobe XD">
+                    <p>The full marketing communications plan created by my team can be viewed <a href={Plan} alt="marketing communications plan" target="_blank">here</a>. You can also view an archive of Realeather's <a href="https://web.archive.org/web/20211201235139/https://www.realeather.com/" alt="old website" target="_blank">website at the time</a>.</p>
+                </ProjectIntro>
             </section>
             <section>
                 <h2>User Flow</h2>
@@ -37,7 +40,6 @@ const Realeather = () => {
                         <li>Follows the link to the Amazon store to purchase leather products</li>
                         <li>Searches store locations to find the closest store to them</li>
                         <li>Finds contact information to get in touch with the Realeather corporate team</li>
-                        <li>Signs up for the newsletter to stay up to date on the leather working industry</li>
                         <li>Browses the Realeather newsletter for new ideas for leather crafts</li>
                         <li>Reads the education section to learn tips and tricks about using realeather products</li>
                     </ul>
@@ -46,7 +48,6 @@ const Realeather = () => {
                     <ul>
                         <li>Studies product information to compare different products before making a selection</li>
                         <li>Follows the link to the Amazon store to purchase leather products</li>
-                        <li>Signs up for the newsletter to gain more knowledge about leather crafting</li>
                         <li>Visits the contact us page to find a phone number and office hours to get a representative to answer a question</li>
                         <li>Reads the education section to find projects and patterns to try</li>
                     </ul>
@@ -55,7 +56,6 @@ const Realeather = () => {
                     <ul>
                         <li>Purchases new leather products on the products page to complete their projects</li>
                         <li>Studies the map to find the closest brick-and-mortar seller of Realeather products</li>
-                        <li>Signs up for the newsletter to find inspiration for new leatherworking projects</li>
                     </ul>
                 </Accordion>
             </section>
@@ -67,15 +67,13 @@ const Realeather = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Organizing the site in a way that made sense was challenging. The <a href="https://web.archive.org/web/20211201235139/https://www.realeather.com/" alt="old website" target="_blank">old website</a> had three different navigations that were very confusing, so I had to come up with a way to fix it. The site was also just too busy visually, so I tried to simplify it some in my redesign.</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Looking back at the project now, I would add a space for users to sign up for a newsletter to keep them coming back to the site. I would also create a rotating banner at the top of the page rather than using a static image.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I created a new home page design to make it easier for potential Realeather users to get inspiration for new projects, find the products they're looking for, and have their work promoted.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Other than learning more about the leather industry than I ever wanted to know, I learned a lot about secondary research. Since we didn't have members of the target audience available to conduct primary research, my team had to find other ways of learning about Realeather consumers. Our research is detailed in the full <a href={Plan} target="_blank" alt="marketing communications plan">marketing communications plan</a>.</p>
             </section>
         </div>
     )

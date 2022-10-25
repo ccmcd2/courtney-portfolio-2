@@ -31,7 +31,7 @@ export const Portfolio2Description = "I designed this site to showcase all of my
 
 export const RealeatherType = "Prototype";
 export const RealeatherTitle = "Realeather";
-export const RealeatherDescription = "I worked with my team to create an advertising campaign for Realeather. This included a complete overhaul of their website, which I designed. Our market segment for this campaign was crafters who create leather products to be sold on Etsy.";
+export const RealeatherDescription = "I worked with my team to create a marketing communications plan for Realeather. This included a complete overhaul of their website, which I designed. Our market segment for this campaign was crafters who create leather products to be sold on Etsy.";
 
 export const TCPHType = "Website Design";
 export const TCPHTitle = "Tarrant County Public Health";
