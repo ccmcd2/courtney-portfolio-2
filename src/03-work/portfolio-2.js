@@ -81,15 +81,13 @@ const Portfolio2 = () => {
             <section>
                 <h2>Insights gained</h2>
                 <h3>Challenges</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
-                <h3>My solutions</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>One of the challenges I encountered while creating this website was picking the order in which to display my work. On one hand, my more recent work is generally better (the code is more efficient, the design is more intentional, the user experience makes more sense, etc.), but on the other hand, some of my earlier work shows off how far I have come in my web design/development journey!</p>
                 <h3>What I would change</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Eventually, I would like to find a way to make my carousel flow diagonally, like I designed it in my wireframes.</p>
                 <h3>Accomplishments</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>I built a portfolio site that shows off all of my work in a way that I feel is true to myself and my personality, which is not something I have been able to say before.</p>
                 <h3>What I learned</h3>
-                <p>Nullam a consectetur purus, at feugiat quam. Vivamus sed luctus nulla, nec condimentum odio. Donec feugiat eros non ex interdum, nec facilisis magna lobortis.</p>
+                <p>Since this was only my second project created with React, I had a lot to learn. The biggest thing that I learned was how to use the styled-components library. In previous projects, I have always just used a CSS behemoth document that I never really liked. The styled-components library offered the push I needed to finally get away from that habit.</p>
             </section>
         </div>
     )

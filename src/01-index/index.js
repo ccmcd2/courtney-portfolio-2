@@ -68,7 +68,7 @@ const Index = () => {
                     <p>In 2022, there is no reason why people should have to turn their phones sideways to properly view a website. I design and develop with the mobile user in mind&mdash;they shouldn't have to wait, endlessly scroll, hunt, pinch, or squint to understand or enjoy my products. <Link to="/about#design-philosophy">Read my full design philosophy.</Link></p>
                 </Accordion>
                 <Accordion color={palette.color3} panelText="Problem solving">
-                    <p>Like most problems, issues that I face when coding often require some extra imaginiation (and some good old-fashioned trial and error) to fix. Luckily, I enjoy challenges. I don't let myself design based on what I do or don't know how to code, so when it comes time to develop, I often get to learn something new.</p>
+                    <p>Like most problems, issues that I face when coding often require some extra imaginiation (and some good old-fashioned trial and error) to fix. Luckily, I enjoy challenges. I try not to let myself design based on what I do or don't know how to code, so when it comes time to develop, I often get to learn something new.</p>
                 </Accordion>
                 <Accordion color={palette.color4} panelText="Attention to detail">
                     <p>I take pride in my work, so it is important to me that it is free from errors. I make an effort to keep track of the small details, including the seemingly minute ones that can take a design to the next level.</p>
