@@ -80,7 +80,7 @@ const CarouselTest = ({ children, currentIndex, setCurrentIndex }) => {
     return (
         <>
             <SliderContainer duration={DURATION} displayCount={DISPLAY_COUNT} currentIndex={currentIndex} childCount={React.Children.count(children)}>
-                <Slider className="slider" prevArrow={<LeftArrow />} nextArrow={<RightArrow />} duration={DURATION} slidesToShow={DISPLAY_COUNT} arrowsBlock={false} wheel={false} swipe={false} autoplay={AUTOPLAY} pauseOnHover={true} autoplaySpeed={AUTOPLAY_SPEED} beforeChange={(_oldIndex, newIndex) => {
+                <Slider className="slider" prevArrow={<LeftArrow />} nextArrow={<RightArrow />} duration={DURATION} slidesToShow={DISPLAY_COUNT} arrowsBlock={false} wheel={false} swipe={false} autoplay={AUTOPLAY} pauseOnHover={false} autoplaySpeed={AUTOPLAY_SPEED} beforeChange={(_oldIndex, newIndex) => {
                     setCurrentIndex(newIndex);
                 }}>
                     {children}
