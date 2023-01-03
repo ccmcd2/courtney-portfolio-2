@@ -16,7 +16,7 @@ const Work = () => {
     return (
         <main>
             <section>
-                <h1 style={{marginBottom: -10}}>My work (made with love)</h1>
+                <h1 style={{marginBottom: -10}}>My work</h1>
             </section>
             <section>
                 <Project image={GrandPrairieIntranetHome} alt="home page of City of Grand Prairie's intranet" title={description.GPIntranetTitle} type={description.GPIntranetType}color={palette.color1} className="left">
